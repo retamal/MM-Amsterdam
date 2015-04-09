@@ -1,0 +1,95 @@
+body{
+    background-color: black
+}
+
+#title{
+    text-align: center;
+    width: 100%;
+    color: white;
+    padding: 30px;
+}
+
+.menu-bar{
+    width: 100%;
+    color:white;
+    display: none; /*Escondido*/
+}
+
+nav #mnav{
+    /*
+    margin:50px auto;
+    width: 1000px;
+    height: 40px;
+    */
+    margin:50px auto;
+    width: 90%;
+    max-width: 1000px; /*max ancho navegador*/
+    height: 40px;
+    background: linear-gradient(to bottom, #3c3c3c 0%,#000000 100%);
+}
+
+nav ul{
+    list-style: none;
+    /*
+    width: 1000px;
+    height: 40px;
+    */
+}
+
+nav ul li{
+    float: left; /*flotar elementos ponerlos uno detras de otro*/
+    width: 200px;
+    height: 40px;
+
+    overflow: hidden; /*esconde lo que se sale de los limites de li (container1||container2)*/
+    margin-top: 0px;
+}
+
+div.container{
+    width: 200px;
+    height: 80px; /*doble de li 40, para efecto hover*/
+}
+
+div.container:hover{
+    margin-top: -40px;  /*el margen se va hacia arriba y queda visto el contenedor2*/
+    -webkit-transition:all 0.3s ;
+    -moz-transition:all 0.3s ;
+    -o-transition:all 0.3s ;
+    transition:all 0.3s ;
+}
+
+div.container1{
+    width: 200px;
+    height: 36px;
+    background: linear-gradient(to bottom, #3c3c3c 0%,#000000 100%);
+    overflow: hidden;
+    border-bottom: 4px solid #c40c05; /*se ve al hacer hover*/
+}
+
+div.container2{/*container hover*/
+    width: 200px;
+    height: 40px;
+    /*background-color: #e00b2c;*/
+    background: linear-gradient(to bottom, #db3e29 0%,#c40c05 100%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}
+
+p.nav-btn-1, p.nav-btn-2{
+    text-align: center;
+    margin-top: 10px;
+    color:white;
+}
+
+span{
+    margin: 10px;
+}
+
+#page{
+    width: 100%;
+    height: 100%;
+    color: white;    
+    background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Amsterdam_wapen.svg/1280px-Amsterdam_wapen.svg.png);
+    background-size:cover;
+}

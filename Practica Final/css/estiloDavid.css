@@ -4,12 +4,31 @@
     margin: 0;
     padding: 0;
     border: 0;
-     background-image:url(../recursos/posiblefondo.jpg);
-    background-repeat: no-repeat;
     
 }
 
-#indexPrincipal{
-   
+/*
+body{
+    background-image:url(../recursos/posiblefondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hola{
+    color:blue;
+    -webkit-transition:all 0.3s ;
+    -moz-transition:all 0.3s ;
+    -o-transition:all 0.3s ;
+    transition:all 0.3s ;
+    background-image:url(../recursos/posiblefondo.jpg);
+    border:3px solid green;
+    border-left: 0px;
     
 }
+
+#hola:hover{
+    color:red;
+    background-image:url(http://www.layoverguide.com/wp-content/uploads/2011/12/Red-Light-District-at-evening-in-Amsterdam-Holland.jpg);
+    font-size: 2em;
+}
+*/
