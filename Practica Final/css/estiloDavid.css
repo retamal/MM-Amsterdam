@@ -1,34 +1,34 @@
 *{   
-    font-family:helvetica, Verdana, sans-serif;     
+    font-family: 'Limelight',helvetica, Verdana, sans-serif;     
     list-style: none;
-    margin: 0;
-    padding: 0;
-    border: 0;
+    margin:0px;
     
 }
 
-/*
-body{
-    background-image:url(../recursos/posiblefondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+html,body{/*truco height 100%*/
+    height:100%;
 }
 
-#hola{
-    color:blue;
-    -webkit-transition:all 0.3s ;
-    -moz-transition:all 0.3s ;
-    -o-transition:all 0.3s ;
-    transition:all 0.3s ;
-    background-image:url(../recursos/posiblefondo.jpg);
-    border:3px solid green;
-    border-left: 0px;
-    
+
+.wrapper{
+    height: 100%; 
+    background-color: grey;
 }
 
-#hola:hover{
-    color:red;
-    background-image:url(http://www.layoverguide.com/wp-content/uploads/2011/12/Red-Light-District-at-evening-in-Amsterdam-Holland.jpg);
-    font-size: 2em;
+.view{
+    height: 100%;
+    background-color: #7bc67b;
 }
-*/
+
+.contenedorAlrededor{
+    height: 100%;
+    overflow: auto;
+    white-space:nowrap;
+}
+
+.hPage{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    display: inline-block;
+}
