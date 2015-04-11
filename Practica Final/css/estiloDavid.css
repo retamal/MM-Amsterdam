@@ -68,19 +68,7 @@ a:hover {color:#ffffff;}
     height: 100%;
 }
 
-#titulo{
-    height: 50%;
-    text-align:center;
-     -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-       background-image: url(../recursos/posiblefondo.jpg);
-background-repeat: no-repeat;
-    background-size: cover;
-    
-}
+
 #textoAmsterdam{
     color:white;
     font-family:helvetica;
@@ -88,9 +76,25 @@ background-repeat: no-repeat;
     font-size: 140px;
     position: relative;
     text-shadow: 1px 1px 20px black;
-    top:-70px;
+    top: 40%;
     letter-spacing: 20px;
+    display: block;
 
+}
+
+#descripcionAmsterdam{
+    color:white;
+    font-family:helvetica;
+    text-align: right;
+    font-size: 40px;
+    position: relative;
+    text-shadow: 1px 1px 20px black;
+    top: 40%;
+    width: 50%;
+    letter-spacing: 4px;
+    padding: 10px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
 
 }
 
