@@ -1,5 +1,5 @@
 *{   
-    font-family: 'Limelight',helvetica, Verdana, sans-serif;     
+    font-family: 'Slabo 27px','Limelight',helvetica, Verdana, sans-serif;     
     list-style: none;
     margin:0px;
     
@@ -8,7 +8,9 @@
 html,body{/*truco height 100%*/
     height:100%;
 }
-
+#top{
+   
+}
 a{
    font-family: 'Duru Sans',helvetica;
     text-decoration: none;
@@ -24,14 +26,9 @@ a:hover {color:#ffffff;}
     background-color: grey;
 }
 
-.viewPrin{
-    height: 100%;    
-    background-image: url(../recursos/posiblefondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 /*BARRA DE MENU*/
+
 #contenedorMenu{
     position: fixed;
     background-color: rgba(255, 255, 255, 0);
@@ -64,7 +61,25 @@ a:hover {color:#ffffff;}
 }
 /*FIN BARRA DE MENU*/
 
-#contenedorIndex{    
+/*VIEW*/
+
+.viewPrin{
+    height: 100%;    
+    background-image: url(../recursos/posiblefondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.view{
+    height: 100%;
+    background-color: green;    
+}
+
+/*FIN VIEW*/
+
+/*Principal*/
+
+.contenedorIndex{    
     height: 100%;
 }
 
@@ -100,11 +115,110 @@ a:hover {color:#ffffff;}
 }
 
 
-.view{
-    height: 100%;
-    background-color: #7bc67b;
+
+/*seccion historia*/
+
+#historia{
+    background-color: white;
+    background-image: url(../recursos/historia2.jpg);
+    background-repeat: no-repeat;
+    
+    
+    background-position: bottom left;
+}
+.barraSeparadora{
+    background-image: url(../recursos/patron1.jpg);
+    width: 100%;
+    height: 10%;
+    display: block;
+    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px black;
+}
+.seccionIndex{
+    width: 100%;
+    height: 90%;
     
 }
+
+.cabeceraSeccion{
+    position: relative;
+    
+    display: block;
+    width: 100%;
+    height: 20%;
+    text-align: left;
+}
+
+.tituloCabecera{    
+    font-size: 80px;
+    padding: 20px; 
+    padding-left: 90px;
+    padding-right: 90px;
+    color: rgba(0, 0, 0, 0.78);
+    border-bottom: 0px solid rgba(0, 0, 0, 0.14);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.08);
+}
+
+.subtituloSeccion{
+    position: relative;
+    display: inline-block;
+    color: #8d8d8d;
+    width: 50%;
+    margin:0;
+    min-height: 20%;
+    max-height: 80%;
+    float: left;
+    font-style: italic;
+    text-align : justify;
+}
+.descripcionSubtitulo{
+    font-size:30px;
+    padding: 30px; 
+    padding-left: 90px;
+    padding-right: 50px;
+
+    
+}
+
+.cuerpoSeccion{
+    float: right;
+    position: relative;
+    display: inline-block;
+    
+    margin: 0;
+    width: 50%;    
+    height: 80%;
+}
+
+.textoCuerpo{   
+    max-height: 80%;
+    display: block;    
+    overflow:hidden;    
+    padding-top: 30px;   
+    padding-right: 15px;
+    font-size: 20px;
+    text-align : justify;
+}
+
+.botonMasInfo{
+    display: block;    
+    height:5%;
+    width: 90%;  
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    color: white;
+    font-family:  Verdana, sans-serif;
+    font-weight: bold;
+    padding-top:6px;
+    
+}
+.botonMasInfo:hover{  
+    background-color: rgb(255, 88, 0);
+   
+}
+
+/*cosa rara*/
 
 .contenedorAlrededor{
     height: 100%;
