@@ -84,7 +84,7 @@ a:hover {color:#ffffff;}
 }
 
 
-#title{
+#textoAmsterdam{
     color:white;
     font-family:helvetica;
     text-align: center;
@@ -96,7 +96,7 @@ a:hover {color:#ffffff;}
     display: block;
 }
 
-#description{
+#descripcionAmsterdam{
     color:white;
     font-family:helvetica;
     text-align: right;
@@ -224,6 +224,7 @@ a:hover {color:#ffffff;}
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 /*cosa rara*/
 
