@@ -398,6 +398,86 @@ a:hover {color:#ffffff;}
     position: absolute;
     margin: 5px;
 }
+
+/*SECCION COMER*/
+
+#comer{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: white;
+    background-image: url(../recursos/fondoburger.jpg);
+}
+.contenedorComida{
+    height: 500px;
+    width: 80%;
+    min-width: 500px;
+    
+    margin: auto;
+}
+
+.imagenComida{
+    width: 33.3%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    display: inline-block;
+    float: left;
+    
+        -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.imagenComida:hover .tituloComida{
+    background-color: black;    
+}
+.imagenComida:hover .descripcionComida{
+    background-color: white;    
+}
+.imagenComida:hover{
+    border-bottom: 10px solid #e59e00;
+}
+
+.tituloComida{
+    margin-top: 50%;
+    color:white;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.34);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.49);
+    padding-top: 10px;
+    display: block;
+    width: 100%;
+    height: 10%;
+}
+.descripcionComida{
+    
+    display: block;
+    width: 100%;
+    height: 20%;
+    margin: auto;   
+    font-size: 18px;
+    
+    color: black;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.49);
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.encajarDesc{
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    padding-top: 5px;
+}
+.fototipica{
+    background-image: url(../recursos/fototipica.jpg);
+}
+.fotorapida{
+    background-image: url(../recursos/fotorapida.jpg);
+}
+.fotorestaurante{
+    background-image: url(../recursos/fotorest.jpg);
+}
 /*cosa rara*/
 
 .contenedorAlrededor{
