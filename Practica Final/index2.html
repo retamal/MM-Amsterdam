@@ -23,7 +23,7 @@ type="text/javascript" charset="utf-8"></script>
          <div id="top"></div>
         <div id="contenedorMenu">
             <ul>
-                <li class="elementoMenu">Postal</li>                
+                <li class="elementoMenu"><a class="enlace" href="#postal">Postal</a></li>                
                 <li class="elementoMenu"><a class="enlace" href="#comer">Dónde comer</a></li>
                 <li class="elementoMenu"><a class="enlace" href="#transporte">Medios de transporte</a></li>
                 <li class="elementoMenu"><a class="enlace" href="#monumentos">Qué ver</a></li>
@@ -217,6 +217,27 @@ Morbi varius nibh sapien, ac mollis turpis iaculis quis. Ut rutrum eros tincidun
                    </div>                
             </div>            
         </section>
+        <section class="view" id="postal">
+            <div class="contenedorIndex">
+                <div class="barraSeparadora"></div>
+                <div class="seccionIndex">
+                    <div class="cabeceraSeccion">
+                        <div class="tituloCabecera">Enviar Postal</div>
+                    </div>
+                    <div class="restoSeccion">
+                        <div id="contenedorPostal">
+                            <form>
+                                <input type="text" class="entradaPosta" placeholder="Destinatario" required></input>
+                                <input type="text" class="entradaPosta alinear" placeholder="Asunto" required></input>
+                                 <textarea class="textoPostal" rows="4" cols="50" placeholder=" Cuerpo del mensaje" required></textarea> 
+                    <input type="submit" class="botonPostal"></input>
+                            </form>
+                        </div>
+                    </div>  
+                </div>                
+            </div>           
+        </section>
+        
         <div class="contenedorAlrededor">
             <div class="hPage">Vista 1</div>
             <div class="hPage">Vista 2</div>

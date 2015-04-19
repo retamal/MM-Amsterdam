@@ -490,6 +490,89 @@ a:hover {color:#ffffff;}
 .fotorestaurante{
     background-image: url(../recursos/fotorest.jpg);
 }
+
+/*** ENVIAR POSTAL **/
+
+#postal{
+    background-color: white;
+    min-height: 700px;
+    background-image: url(../recursos/postalfondo.jpg);
+}
+
+#contenedorPostal{
+    margin: auto;
+    width: 741px;
+    height: 500px;
+    background-image: url(../recursos/postal.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-color: red;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+}
+
+.entradaPosta{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.44);
+    color:black;
+    height: 30px;
+    border-style: none;
+    text-align: center;
+  
+    margin-top: 70px;
+    margin-left: -280px;
+    width: 300px;
+    font-size: 1vw;
+}
+.entradaPosta:focus{
+    box-shadow: 1px 1px 10px #00cdff;
+}
+
+.textoPostal{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.44);
+    color:black;
+    height: 170px;
+    border-style: none;
+    text-align: center;  
+    margin-top: 170px;
+    margin-left: -280px;
+    width: 560px;
+    font-size: 1vw;
+    text-align: justify;
+    
+}
+
+.textoPostal:focus{
+    box-shadow: 1px 1px 10px #00cdff;
+}
+
+
+.botonPostal{
+    position: absolute;    
+    color:black;
+    height: 40px;
+    border-style: none;
+    text-align: center;  
+    margin-top: 370px;
+    margin-left: -280px;
+    width: 270px;
+    font-size: 1vw;
+    border: 4px dashed #206989;
+    background-color: rgba(255, 255, 255, 0.67);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.98);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.49);
+}
+.botonPostal:hover{
+    background-color: rgba(0, 0, 0, 0.77);
+    border-bottom-color: #ffba00;
+    border: 4px dashed #ffba00;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.49);
+    color:white;
+}
+
+.alinear{
+    margin-top: 120px;
+}
 /*cosa rara*/
 
 .contenedorAlrededor{
