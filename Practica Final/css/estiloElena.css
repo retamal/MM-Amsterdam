@@ -1,63 +1,151 @@
-.viewPrin{   
-    background-image: url(http://www.landscape-photo.net/albums/userpics/10001/Amsterdam_-03.jpg);
-}
-#title{
-    font-size: 10vw;
-    text-transform: uppercase;
-}
-
-#description {
-    font-size: 3vw;
+.mayusFont{
     font-weight: normal;
     text-transform: uppercase;
+    font-family:helvetica;
+    text-shadow: 1px 1px 20px black;    
+    letter-spacing: 0.05em;  
 }
 
-.view{
-    background-color: white;
-}
-
-#blackBackground{
-    background-image: url(../recursos/Bicycle_Vray_Wire_by_x666Crucifix666x-trans.png);
-    background-size: contain;
+.contenedorIndex{
+    background-size: 100%;
     background-repeat: no-repeat;
+    height: auto;
+    background-position: center;
+}
+
+#contenedorIndexMT{
+    background-image: url(http://www.landscape-photo.net/albums/userpics/10001/Amsterdam_-03.jpg);
+}
+
+#MT{
+    padding: 8.25%;
+    padding-left: 0;
+}
+
+.title{
+    color:white;
+    font-size: 10vw;
+    padding-left: 10%;
+}
+
+.description {    
+    color:white;
+    font-size: 3vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 20px black;
+    padding: 0.5%;
+    width: 35%;
+    padding-left: 10%;
 }
 
 .title2{
-    
     text-shadow: 1px 1px 4px black;
-    padding-top: 10%;
-    color: black;
     font-size: 9vw;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
 
-.description2{
-    color:black;
-    font-family:helvetica;
-    text-align: left;
-    position: relative;
-    text-shadow: 1px 1px 60px black;
-    top: 40%;
-    width: 50%;
-    letter-spacing: 4px;
-    padding: 10px;
-    display: block;;
-    font-size: 2vw;
-    font-weight: normal;
-    text-transform: uppercase;
+h4.white{
+    color:white;
+    padding: 5%;
+    font-size: 5.5vw;
 }
 
-div.bicycle{
-    color: black;
-    padding-left: 40%;
-    font-size-adjust: auto;
+#contenedorBicycle{
+    text-align: center;
+    padding: 3.9%;
 }
 
+.desplegableDL{
+    color: white;
+}
+
+.desplegableDL dt{
+    background: linear-gradient(to bottom, #3c3c3c 0%,#000000 100%);
+}
+
+.desplegableDL dd{
+    display: none;
+}
+.desplegableDL dt:hover,
+.desplegableDL dt:focus{
+    background: linear-gradient(to bottom, #db3e29 0%,#c40c05 100%);
+}
+.desplegableDL dt:hover + dd,
+.desplegableDL dt:focus + dd{
+    display: block;
+}
+
+@media screen{
+    #bicycle{
+        max-width:100%;
+        height:auto;
+        display: block;
+    }
+    #bicycleHandheld{
+        display: none;
+    }
+}
+@media screen and (max-width: 300px){
+    #bicycle{
+        display: none;
+    }
+    #contenedorBicycle{
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+    #bicycleHandheld{
+        display: block;
+    }
+
+}
 .circle{
-    
+    float: left;
+    margin: 2%;
+    padding: 3%;
+    font-size: 2.2vw;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    text-align: center;
+    display: table;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: table;
+}
+
+#facil{
+    background-color: rgba(206, 255, 0, 0.45);
+    background-image: url(../recursos/tiempo-chic-bike.png);
+    box-shadow: 0 0 10px rgb(206, 255, 0);
+}
+
+#economico{
+    background-color: rgba(206, 255, 0, 0.45);
+    background-image: url(../recursos/leaf-147490_640.png);
+    box-shadow: 0 0 10px rgb(206, 255, 0);
 }
 
 #ecologico{
+    background-color: rgba(206, 255, 0, 0.45);
+    background-image: url(../recursos/eco-chic-bike.png);
+    box-shadow: 0 0 10px rgb(206, 255, 0);
+}
+
+.center{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.centered{
+    height: 0;
     
 }
+
+/*idea: 
+poner @media screen y hand.. horizontal con foto (evitas tener que hacerla pequeña)
+
+*/

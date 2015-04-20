@@ -8,8 +8,7 @@
     <link type="text/css" rel="stylesheet" href="css/estiloElena.css" />
     <link rel="stylesheet" href="fonts/style.css">
     <link href='http://fonts.googleapis.com/css?family=Ruluko|Duru+Sans' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
 type="text/javascript" charset="utf-8"></script>
     
@@ -19,40 +18,38 @@ type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
-    <div class="wrapper">
         <div id="contenedorMenu">
             <ul>
-                <li class="elementoMenu">Ocio</li> 
-                <li class="elementoMenu">Dónde comer</li>
-                <li class="elementoMenu">Medios de transporte</li>
-                <li class="elementoMenu">Qué ver</li>
-                <li class="elementoMenu"><a class="enlace" href="#hola">Historia</a></li>
+                <li class="elementoMenu"><a class="enlace" href="#postal">Postal</a></li>                
+                <li class="elementoMenu"><a class="enlace" href="#comer">Dónde comer</a></li>
+                <li class="elementoMenu"><a class="enlace" href="#transporte">Medios de transporte</a></li>
+                <li class="elementoMenu"><a class="enlace" href="#monumentos">Qué ver</a></li>
+                <li class="elementoMenu"><a class="enlace" href="#historia">Historia</a></li>
+                <li class="elementoMenu"><a class="enlace" href="#top">Home</a></li>
             </ul>
         </div>
-        
-        <section class="viewPrin">           
-            <div id="contenedorIndex">
-                <h1 class="upperFont" id="title">Medios de transporte</h1>
-                <h3 class="upperFont" id="description">Muévete por la ciudad</h3>
-            </div>
-        </section>
-        <section id="whiteBackground"> 
-            <div>
-                <div class="bicycle">
-                    <h3 class="title2">Bicicleta</h3>
-                    <h4 class="description2">Beneficios de la bicicleta</h4>
-                    <div class="circle" id="ecologico"><span class="center">Ecológico</span></div>
-                    <div class="circle" id="facil"><span class="center">Fácil</span></div>
-                    <div class="circle" id="economico"><span class="center">Económico</span></div>
-                </div>
-            </div>
 
-        </section>
-        <div class="contenedorAlrededor">
-            <div class="hPage">Vista 1</div>
-            <div class="hPage">Vista 2</div>
+    <section class="contenedorIndex" id="contenedorIndexMT">       
+        <div id="MT">
+            <h1 class="mayusFont title">Medios de transporte</h1>
+            <h3 class="mayusFont description">Muévete por la ciudad</h3>
         </div>
-    </div>
+    </section>
+    <section id="contenedorBicycle"> 
+        <img id="bicycle" src="recursos/beneficios-de-la-bicicleta.jpg" alt="Usar la bicicleta es fácil, económico and so mainstream" title="La bicicleta en Ámsterdam">
+        
+        <div id="bicycleHandheld">
+            <h4 class="mayusFont white">Beneficios de la bicicleta</h4>
+            <dl class="desplegableDL">
+                <dt class="keep">Fácil</dt>
+                <dd>¡Ámsterdam cuenta con 15.000 km de carril bici! Además el metro está adaptado para viajar sobre ruedas.</dd>
+                <dt class="keep">Ecológico</dt>
+                <dd>Ahorra emisiones de CO<sup>2</sup> y es beneficioso para tu salud.</dd>
+                <dt class="keep">Económico</dt>
+                <dd>Alquilar una bicicleta cuesta 10€/día aprox. e incluye material antirrobo.</dd>
+            </dl>
+        </div>
+    </section>
 </body>
 
 </html>
