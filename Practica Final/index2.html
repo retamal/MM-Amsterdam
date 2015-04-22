@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 
 <head>
@@ -7,8 +7,8 @@
     <link type="text/css" rel="stylesheet" href="css/estiloElena.css" />
     <link type="text/css" rel="stylesheet" href="css/estiloDavid.css" />
    
-    <link href='http://fonts.googleapis.com/css?family=Ruluko|Duru+Sans' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Ruluko|Duru+Sans' rel='stylesheet' type='text/css'></link>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"></meta>
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
 type="text/javascript" charset="utf-8"></script>
@@ -32,14 +32,14 @@ type="text/javascript" charset="utf-8"></script>
             </ul>
         </div>
         
-        <section class="viewPrin">           
+        <section class="viewPrin" >           
             <div class="contenedorIndex">                
                 <div id="textoAmsterdam">ÁMSTERDAM</div>
                 <div id="descripcionAmsterdam">Valiente, inquebrantable y compasiva</div>
             </div>
         </section>
         
-               <section class="view" id="historia">
+        <section class="view" id="historia" >
             <div class="contenedorIndex">
                 <div class="barraSeparadora"></div>
                 <div class="seccionIndex">
@@ -227,9 +227,12 @@ Morbi varius nibh sapien, ac mollis turpis iaculis quis. Ut rutrum eros tincidun
                     <div class="restoSeccion">
                         <div id="contenedorPostal">
                             <form>
-                                <input type="text" class="entradaPosta" placeholder="Destinatario" required></input>
-                                <input type="text" class="entradaPosta alinear" placeholder="Asunto" required></input>
-                                 <textarea class="textoPostal" rows="4" cols="50" placeholder=" Cuerpo del mensaje" required></textarea> 
+                                <label class="aspectoLabel" for="destinatario">Destinatario</label>
+                                <input type="text" id="destinatario" class="entradaPosta" placeholder="Destinatario" required></input>
+                                <label class="aspectoLabel" for="asunto">Asunto</label>
+                                <input type="text" id="asunto" class="entradaPosta alinear" placeholder="Asunto" required></input>
+                                <label class="aspectoLabel" for="textoform" >Texto</label>
+                                 <textarea class="textoPostal" rows="4" cols="50" placeholder=" Cuerpo del mensaje" id="textoform" required></textarea> 
                     <input type="submit" class="botonPostal"></input>
                             </form>
                         </div>

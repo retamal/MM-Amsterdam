@@ -856,6 +856,13 @@ a:hover {color:#ffffff;}
     width: 300px;
     font-size: 1vw;
 }
+#asunto{
+    margin-left: -340px;
+}
+
+#textoform{
+    margin-left: -385px;
+}
 .entradaPosta:focus{
     box-shadow: 1px 1px 10px #00cdff;
 }
@@ -906,6 +913,13 @@ a:hover {color:#ffffff;}
 .alinear{
     margin-top: 120px;
 }
+.aspectoLabel{
+        position: relative;
+        padding: 2px;
+        top: 15px;
+        border: 1px solid black;
+        background-color: rgba(255, 255, 255, 0.44);
+    }
 
 @media (max-width: 1000px) {
     #postal{
@@ -974,6 +988,20 @@ a:hover {color:#ffffff;}
     .alinear{
         margin-top: 120px;
     }
+    
+    #destinatario{
+        margin-left: -280px;
+    }
+    
+    #asunto{
+        margin-left: -340px;
+    }
+
+    #textoform{
+        margin-left: -385px;
+    }
+    
+    
 }
 /*formato moviles*/
 @media (max-width: 500px) { 
@@ -1181,6 +1209,17 @@ a:hover {color:#ffffff;}
         margin-left: -130px;
                 font-size: 5vw;
 
+    }
+     #destinatario{
+        margin-left: -100px;
+    }
+    
+    #asunto{
+        margin-left: -160px;
+    }
+
+    #textoform{
+        margin-left: -200px;
     }
 }
 
