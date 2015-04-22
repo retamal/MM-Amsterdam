@@ -784,7 +784,7 @@ a:hover {color:#ffffff;}
         height: 1150px;
     }
     .contenedorComida{
-        height: none;
+        
         width: 80%;
         min-width: 500px;
 
@@ -924,7 +924,7 @@ a:hover {color:#ffffff;}
 @media (max-width: 1000px) {
     #postal{
         background-color: white;
-        min-height: none;
+        
         background-image: url(../recursos/postalfondo.jpg);
         height: 900px;
     }
@@ -1171,7 +1171,7 @@ a:hover {color:#ffffff;}
         display: block;
         width: 100%;
         background-size: cover;
-        min-width: none;
+        
     }
     .tituloComida{
         font-size: 6vw;
