@@ -1,0 +1,27 @@
+.icon_Bicycle{
+    background-image: url(../recursos/MTicons/bike.png);
+}
+
+.icon_Bus{
+    background-image: url(../recursos/MTicons/bus.png);
+}
+
+.icon_Ferry{
+    background-image: url(../recursos/MTicons/ship.png);
+}
+
+.icon_Taxi{
+    background-image: url(../recursos/MTicons/taxi.png);
+}
+
+.icon_Tram{
+    background-image: url(../recursos/MTicons/tram.png);
+}
+
+.icon_Subway{
+    background-image: url(../recursos/MTicons/metro.png);
+}
+
+.icon_ReturnToTop{
+    background-image: url(../recursos/MTicons/metro.png);
+}

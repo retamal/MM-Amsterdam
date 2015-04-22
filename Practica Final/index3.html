@@ -4,9 +4,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Ámsterdam Tips</title>
-    <link type="text/css" rel="stylesheet" href="css/estiloDavid.css" />
+    <link href="http://netdna.boostrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
     <link type="text/css" rel="stylesheet" href="css/estiloElena.css" />
-    <link rel="stylesheet" href="fonts/style.css">
+   
     <link href='http://fonts.googleapis.com/css?family=Ruluko|Duru+Sans' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
@@ -17,39 +17,55 @@ type="text/javascript" charset="utf-8"></script>
 
 </head>
 
-<body>
-        <div id="contenedorMenu">
-            <ul>
-                <li class="elementoMenu"><a class="enlace" href="#postal">Postal</a></li>                
-                <li class="elementoMenu"><a class="enlace" href="#comer">Dónde comer</a></li>
-                <li class="elementoMenu"><a class="enlace" href="#transporte">Medios de transporte</a></li>
-                <li class="elementoMenu"><a class="enlace" href="#monumentos">Qué ver</a></li>
-                <li class="elementoMenu"><a class="enlace" href="#historia">Historia</a></li>
-                <li class="elementoMenu"><a class="enlace" href="#top">Home</a></li>
-            </ul>
-        </div>
-
-    <section class="contenedorIndex" id="contenedorIndexMT">       
+<body>    
+    <section class="contenedorImage" id="backgroundIndexMT">       
         <div id="MT">
             <h1 class="mayusFont title">Medios de transporte</h1>
             <h3 class="mayusFont description">Muévete por la ciudad</h3>
         </div>
     </section>
-    <section id="contenedorBicycle"> 
+    <section id="contenedor"> 
         <img id="bicycle" src="recursos/beneficios-de-la-bicicleta.jpg" alt="Usar la bicicleta es fácil, económico and so mainstream" title="La bicicleta en Ámsterdam">
         
         <div id="bicycleHandheld">
             <h4 class="mayusFont white">Beneficios de la bicicleta</h4>
             <dl class="desplegableDL">
-                <dt class="keep">Fácil</dt>
+                <dt>Fácil</dt>
                 <dd>¡Ámsterdam cuenta con 15.000 km de carril bici! Además el metro está adaptado para viajar sobre ruedas.</dd>
-                <dt class="keep">Ecológico</dt>
+                <dt>Ecológico</dt>
                 <dd>Ahorra emisiones de CO<sup>2</sup> y es beneficioso para tu salud.</dd>
-                <dt class="keep">Económico</dt>
+                <dt>Económico</dt>
                 <dd>Alquilar una bicicleta cuesta 10€/día aprox. e incluye material antirrobo.</dd>
             </dl>
         </div>
     </section>
+    
+        <section class="contenedorImage"> 
+            
+            <input type="radio" name="slider-select-element" id="elementRed" checked="checked"/>
+            <input type="radio" name="slider-select-element" id="elementGreen"/>
+            <input type="radio" name="slider-select-element" id="elementOrange"/>
+            <div id="slider-container">
+                <div id="slider-box">
+                    <div class="slider-element">
+                        <img id="red-line" src="recursos/rode-lijn_5.jpg">
+                    </div>
+                    <div class="slider-element">
+                        <img id="green-line" src="recursos/groene-lijn-zomer-2015_6.jpg">
+                    </div>
+                    <div class="slider-element">
+                        <img id="orange-line" src="recursos/Oranje-lijn-zomer-2015_5.jpg">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="slider-arrows">
+                <label for="elementRed">Elemento Red</label>
+                <label for="elementGreen">Elemento Green</label>
+                <label for="elementOrange">Elemento Orange</label>
+            </div>
+    </section>
+    
 </body>
 
 </html>
