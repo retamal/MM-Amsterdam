@@ -141,13 +141,9 @@ un elemento u otro */
     margin-left: -200%;
 }
 
-
-
 #slider-container{
-    width: 100%;
+    width: 30%;
     height: 20%;
-    margin: 0 auto;
-    text-align: left;
     overflow: hidden;
 }
 
@@ -172,9 +168,7 @@ un elemento u otro */
 
 #slider-arrows{
     width: 80%;
-    position: absolute;
     margin-top: -50%;
-    background-color: blue;
     height: 50px;
 }
 
