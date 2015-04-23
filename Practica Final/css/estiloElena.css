@@ -42,7 +42,7 @@ body{
 
 h4.white{
     color:white;
-    padding: 5%;
+    padding: 1%;
     font-size: 5.5vw;
 }
 
@@ -58,7 +58,6 @@ h4.white{
 
 #contenedor{
     text-align: center;
-    padding: 4%;
 }
 /*END Section*/
 
@@ -74,14 +73,7 @@ h4.white{
 /*End Index*/
 
 /*BEGIN div Styles*/
-.circle{
-    width: 300px;
-	height: 300px;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-    background-color: black;
-}
+
 
 .rectangle{
     width: 20%;
@@ -95,19 +87,14 @@ h4.white{
 
 #bicycle{
     max-width:100%;
-    height:auto;
+    height:auto;    
+    padding: 4%;
 }
 
 #bicycleHandheld{
     display: none;
 }
 /*END Section Bicycle*/
-
-/*BEGIN Section Canal Bus*/
-#backgroundSectionCB{
-    background-image: url(../recursos/amsterdam_canal_house_bridge_boat_hd-wallpaper-1791801.jpg);
-}
-/*END Section Canal Bus*/
 
 /*BEGIN Desplegable Description List*/
 .desplegableDL{
@@ -129,7 +116,13 @@ h4.white{
 }
 /*END Desplegable Description List*/
 
+/*BEGIN Canal Bus*/
+
 /*BEGIN Slider*/
+
+input[name="slider-select-element"]{
+    display: none;
+}
 
 /* como hay overflow en el slider-container se colocan
 los elementos uno detrás de otro hacia la derecha.
@@ -148,9 +141,7 @@ un elemento u otro */
     margin-left: -200%;
 }
 
-input [name="slider-select-element"]{
-    display: none;
-}
+
 
 #slider-container{
     width: 100%;
@@ -178,7 +169,76 @@ input [name="slider-select-element"]{
     max-height: 80%;
     width: 100%
 }
+
+#slider-arrows{
+    width: 80%;
+    position: absolute;
+    margin-top: -50%;
+    background-color: blue;
+    height: 50px;
+}
+
+#elementRed:checked ~ #slider-arrows label:nth-child(2),
+#elementGreen:checked ~ #slider-arrows label:nth-child(3),
+#elementOrange:checked ~ #slider-arrows label:nth-child(1){
+    display: block;
+    float: right;
+}
+
+#elementRed:checked ~ #slider-arrows label:nth-child(3):before,
+#elementGreen:checked ~ #slider-arrows label:nth-child(1):before,
+#elementOrange:checked ~ #slider-arrows label:nth-child(2):before{
+    color: black;
+    content: "\f053";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:antialiased;
+}
+
+#elementRed:checked ~ #slider-arrows label:nth-child(3),
+#elementGreen:checked ~ #slider-arrows label:nth-child(1),
+#elementOrange:checked ~ #slider-arrows label:nth-child(2){
+    display: block;
+    float: left;
+}
+
+#slider-arrows label{
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+    height: 20px;
+    width: 20px;
+}
+
+#elementRed:checked ~ #slider-arrows label:nth-child(2):before,
+#elementGreen:checked ~ #slider-arrows label:nth-child(3):before,
+#elementOrange:checked ~ #slider-arrows label:nth-child(1):before{
+    color: black;
+    content: "\f054";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:antialiased;
+}
 /*END Slider*/
+
+/*BEGIN Circles*/
+    .circle{
+    width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+    background-color: black;
+}
+/*END Circles*/
+
+/*END Canal Bus*/
 
 /*Movil*/
 
