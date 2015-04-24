@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es" xml:lang="es">
+<html lang="es">
 <head>
 <!--
 tests que debe pasar:
@@ -35,7 +35,7 @@ type="text/javascript" charset="utf-8"></script>
             <h3 class="mayusFont description">Muévete por la ciudad</h3>
         </div>
     </section>
-    <section id="contenedor"> 
+    <section> 
         <img id="bicycle" src="recursos/beneficios-de-la-bicicleta.jpg" alt="Usar la bicicleta es fácil, económico and so mainstream" title="La bicicleta en Ámsterdam"/>
         
         <div id="bicycleHandheld">
@@ -47,7 +47,33 @@ type="text/javascript" charset="utf-8"></script>
         </div>
     </section>
     
-        <section>             
+    <section class="contenedorImage" id="CB">
+        <div>
+            <h3 class="titleSection mayusFont">Canal Bus</h3>
+
+            <div class="rectangle">
+                <div class="square">
+                    <div class="trans8 yellowBackground circle">
+                        <span class="icon price"></span>
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="trans8 greenBackground circle">
+                        <span class="icon wifi"></span>
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="trans8 redBackground circle">
+                        <span class="icon audioGuide"></span>
+                    </div>
+                </div>
+                <div class="square">
+                    <div class="trans8 blueBackground circle">
+                        <span class="icon app"></span>
+                    </div>
+                </div>
+            </div>
+            
             <input type="radio" name="slider-select-element" id="elementRed" checked="checked"/>
             <input type="radio" name="slider-select-element" id="elementGreen"/>
             <input type="radio" name="slider-select-element" id="elementOrange"/>
@@ -64,21 +90,27 @@ type="text/javascript" charset="utf-8"></script>
                     </div>
                 </div>
             </div>
-            
             <div id="slider-arrows">
-                <label for="elementRed">Elemento Red</label>
-                <label for="elementGreen">Elemento Green</label>
-                <label for="elementOrange">Elemento Orange</label>
+                <label for="elementRed"></label>
+                <label for="elementGreen"></label>
+                <label for="elementOrange"></label>
             </div>
-            
-            <div id=circle><span class="price"></span></div>
-            <div id=circle><span class="wifi"></span></div>
-            <div id=circle><span class="audioGuide"></span></div>
-            <div id=circle><span class="app"></span></div>
+        </div>
+        <div id="bicycleHandheld">
+            <!-- falta movil -->
+            <dl class="desplegableDL">
+                <dt><h4 class="mayusFont white">Beneficios de la bicicleta</h4></dt>
+                <dd>¡Ámsterdam cuenta con 15.000 km de carril bici! Además el metro está adaptado para viajar sobre ruedasAhorra emisiones de CO<sup>2</sup> y es beneficioso para tu salud.Alquilar una bicicleta cuesta 10€/día aprox. e incluye material antirrobo.</dd>
+            </dl>
+        </div>
+        
     </section>
     
-    <section>
-        
+    <!--TRANVIA-->
+    <section class="contenedorImage" id="backgroundT">
+        <div>
+            HOLIIIIIIIIIIIIIIIIIIIIIIIIII
+        </div>
     </section>
     
 </body>

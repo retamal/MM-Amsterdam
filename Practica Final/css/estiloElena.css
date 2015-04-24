@@ -8,6 +8,33 @@ body{
     text-align: center;
 }
 
+/**/
+.blackBackground{
+    background-color: black;
+}
+
+.greenBackground{
+    background-color: #13d355;
+}
+
+.blueBackground{
+    background-color: #1338d3;
+}
+
+.yellowBackground{
+    background-color: #c4d313;
+}
+
+.redBackground{
+    background-color: #d31313;
+}
+
+.right{
+    float: right;
+    margin-right: 5%;
+}
+/**/
+
 /*BEGIN Text style*/
 .mayusFont{
     font-weight: normal;
@@ -55,10 +82,6 @@ h4.white{
     height: auto;
     background-position: center;
 }
-
-#contenedor{
-    text-align: center;
-}
 /*END Section*/
 
 /*BEGIN Section Index*/
@@ -73,16 +96,14 @@ h4.white{
 /*End Index*/
 
 /*BEGIN div Styles*/
-
-
-.rectangle{
-    width: 20%;
-    background-color: black;
-}
-
-.trans{
+.trans5{
     opacity: 0.5;
 }
+
+.trans8{
+    opacity: 0.9;
+}
+/*END div Styles*/
 /*BEGIN Section Bicycle*/
 
 #bicycle{
@@ -118,6 +139,7 @@ h4.white{
 
 /*BEGIN Canal Bus*/
 
+
 /*BEGIN Slider*/
 
 input[name="slider-select-element"]{
@@ -140,11 +162,24 @@ un elemento u otro */
 #elementOrange:checked ~ #slider-container #slider-box {
     margin-left: -200%;
 }
+/*-------------------------------*/
+
+#CB{
+    float: left;
+    background-image: url(../recursos/amsterdam_canal_house_bridge_boat_hd-wallpaper-1791801.jpg); 
+    background-position: bottom;
+}
+
+h3.titleSection{
+    color: white;
+    padding-top: 2%;
+    font-size: 4.65vw;
+}
 
 #slider-container{
-    width: 30%;
-    height: 20%;
+    width: 55%;
     overflow: hidden;
+    margin-left: 2%
 }
 
 #slider-box{
@@ -154,22 +189,23 @@ un elemento u otro */
     -ms-transition: all 0.75s ease;
     -o-transition: all 0.75s ease;
     transition: all 0.75s ease;
+    padding: 5%;
 }
 
 .slider-element{
     float: left;    /*el ancho se atoajusta al contenido*/    
-    width: 33.333%;
+    width: 33.333%;    
 }
 
 .slider-element img{
-    max-height: 80%;
-    width: 100%
+    max-height: 100%;
+    width: 100%;
 }
 
 #slider-arrows{
-    width: 80%;
-    margin-top: -50%;
-    height: 50px;
+    width: 50%;
+    margin-top: -18%;
+    margin-left: 5%;
 }
 
 #elementRed:checked ~ #slider-arrows label:nth-child(2),
@@ -177,6 +213,18 @@ un elemento u otro */
 #elementOrange:checked ~ #slider-arrows label:nth-child(1){
     display: block;
     float: right;
+}
+
+#elementRed:checked ~ #slider-arrows label:nth-child(3),
+#elementGreen:checked ~ #slider-arrows label:nth-child(1),
+#elementOrange:checked ~ #slider-arrows label:nth-child(2){
+    display: block;
+    float: left;
+}
+
+#slider-arrows label{
+    cursor: pointer;
+    font-size: 3vw;
 }
 
 #elementRed:checked ~ #slider-arrows label:nth-child(3):before,
@@ -192,24 +240,9 @@ un elemento u otro */
     -moz-osx-font-smoothing:antialiased;
 }
 
-#elementRed:checked ~ #slider-arrows label:nth-child(3),
-#elementGreen:checked ~ #slider-arrows label:nth-child(1),
-#elementOrange:checked ~ #slider-arrows label:nth-child(2){
-    display: block;
-    float: left;
-}
-
-#slider-arrows label{
-    cursor: pointer;
-    display: none;
-    font-size: 30px;
-    height: 20px;
-    width: 20px;
-}
-
-#elementRed:checked ~ #slider-arrows label:nth-child(2):before,
-#elementGreen:checked ~ #slider-arrows label:nth-child(3):before,
-#elementOrange:checked ~ #slider-arrows label:nth-child(1):before{
+#elementRed:checked ~ #slider-arrows label:nth-child(2):after,
+#elementGreen:checked ~ #slider-arrows label:nth-child(3):after,
+#elementOrange:checked ~ #slider-arrows label:nth-child(1):after{
     color: black;
     content: "\f054";
     font-family: FontAwesome;
@@ -222,17 +255,70 @@ un elemento u otro */
 /*END Slider*/
 
 /*BEGIN Circles*/
-    .circle{
-    width: 300px;
-	height: 300px;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-    background-color: black;
+.rectangle{
+    float: right;
+    width: 35%;
+    margin-right: 3%;
+    
+    box-sizing: content-box;
+    padding: 8% 0;
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.square{    
+    box-sizing: content-box;
+    padding: 3%; 
+    display: inline-block;
+    width: 35%;
+}
+
+.circle {
+    padding: 27%;
+    border-radius: 50%;
+    color: white;
+}
+
+.icon{
+    display: inline-block;
+    height: 10px;
+    font-size: 5vw;
+    font-family: FontAwesome;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:antialiased;
+}
+
+.price{
+}
+.price:before{
+    content: "\f0d6";
+}
+.wifi{
+}
+.wifi:before{
+    content: "\f1eb";
+}
+.audioGuide{
+}
+.audioGuide:before{
+    content: "\f025";
+}
+.app{
+}
+.app:before{
+    content: "\f10b";
 }
 /*END Circles*/
 
 /*END Canal Bus*/
+
+/*BEGIN Tram*/
+#backgroundT{
+    background-image: url(../recursos/1024px-Centraal_Station_Stationsplein,_Amsterdam.jpg)
+}
+
+/*END Tram*/
 
 /*Movil*/
 
