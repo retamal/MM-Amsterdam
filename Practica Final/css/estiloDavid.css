@@ -1275,7 +1275,7 @@ a:hover {color:#ffffff;}
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.67);
     }
     .botonaudio:hover{
-        background-color: rgba(196, 166, 0, 0.81);
+        background-color: rgba(0, 106, 196, 0.81);
     }
 
     @media (max-width: 1420px) {
