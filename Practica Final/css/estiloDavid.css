@@ -1229,22 +1229,147 @@ a:hover {color:#ffffff;}
 /* CSS SECCION HISTORIA */
 
 /*******************/
-    .botonaudio{
-        position:absolute;
-      
-     
 
-        margin-left: 40px;
-      
-        font-size: 5vw;
-        background-color: red;
-        display: inline-block;
+/*VIDEO YOUTUBE*/
+    .cajadevideo{
+
+        width:560px;
+        margin:auto;
+
     }
 
+    .video{
+
+        height:0px;
+        width:100%;
+        max-width:560px;
+        padding-top:56.25%;
+        position:relative;
+
+    }
+
+    iframe{
+
+        position:absolute;
+        height:100%;
+        width:100%;
+        top:0px;
+        left:0px;
+
+    }
+
+/**/
+
+    .botonaudio{
+        z-index: 999;
+        position:absolute;
+        width: 100px;
+        height: 100px;
+        background-image: url(../recursos/iconaudio.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 40px;      
+        font-size: 5vw;
+        background-color: rgba(255, 255, 255, 0.56);
+        display: inline-block;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.67);
+    }
+    .botonaudio:hover{
+        background-color: rgba(196, 166, 0, 0.81);
+    }
+
+    @media (max-width: 1420px) {
+          .botonaudio{
+            width: 80px;
+            height: 80px;
+          }
+    }
+    @media (max-width: 1210px) {
+          .botonaudio{
+            width: 60px;
+            height: 60px;
+          }
+    }
+    @media (max-width: 950px) {
+          .botonaudio{
+            width: 40px;
+            height: 40px;
+          }
+    }
+    @media (max-width: 500px) {
+        .botonaudio{
+            margin-top: 10px;
+            margin-left: 0px;
+            width: 30px;
+            height: 30px;
+          }
+    }
+    @media (max-width: 350px) {
+          .botonaudio{
+              margin-top: 5px;
+            width: 25px;
+            height: 25px;
+          }
+    }
+/*FIN BOTON AUDIO AJUSTABLE*/
     #fondoHistoria{
         background-image: url(../recursos/fondohistoria.jpg);
     }
 
     #historia1{
-/*        background-image: url(../recursos/barco.jpg);*/    
+        background-image: url(../recursos/fondoh1.jpg);
+        background-repeat: no-repeat;
+        background-size:cover; 
+        height:700px;
     }
+
+    #historia2{
+        background-image: url(../recursos/fondoh2.jpg);
+        background-repeat: no-repeat;
+        background-size:cover; 
+        
+    }
+    .contendorCuerpoTexto{
+       
+        text-align: justify;
+        padding: 30px;
+        font-size: 1.5vw;
+        padding-top: 60px;
+        
+        text-shadow: 2px 0px 1px rgb(255, 255, 255);
+
+    }
+
+@media (max-width: 1000px) {
+    #historia1{  
+        height:500px;
+    }
+    #historia2{  
+        height:750px;
+    }
+    .contendorCuerpoTexto{
+        margin-top: 110px;
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 500px) {
+      #historia1{  
+        height:550px;
+    }
+    #historia2{  
+        height:1150px;
+    }
+    
+    
+    .contendorCuerpoTexto{
+        margin-top: 60px;
+        font-size: 3.8vw;
+    }    
+}
+
+@media (max-width: 350px) {
+    #historia2{  
+        height:850px;
+    } 
+}
