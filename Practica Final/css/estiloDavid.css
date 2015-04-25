@@ -1232,14 +1232,14 @@ a:hover {color:#ffffff;}
 
 /*VIDEO YOUTUBE*/
     .cajadevideo{
-
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.81);
         width:560px;
         margin:auto;
 
     }
 
     .video{
-
+        
         height:0px;
         width:100%;
         max-width:560px;
@@ -1249,7 +1249,7 @@ a:hover {color:#ffffff;}
     }
 
     iframe{
-
+        border:none;
         position:absolute;
         height:100%;
         width:100%;
@@ -1342,6 +1342,12 @@ a:hover {color:#ffffff;}
         background-size:cover; 
         
     }
+    #historia5{
+        background-image: url(../recursos/fondoh5.jpg);
+        background-repeat: no-repeat;
+        background-size:cover; 
+        
+    }
     .contendorCuerpoTexto{
        
         text-align: justify;
@@ -1402,4 +1408,12 @@ a:hover {color:#ffffff;}
     #historia4{
         height: 700px;
     }
+}
+/***************************************** F O O T E R *******************/
+#footer{
+    background-image: url(../recursos/patron1.jpg);
+    padding: 4px;
+    font-size: 12px;
+  
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.65);
 }
