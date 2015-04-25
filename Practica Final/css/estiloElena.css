@@ -18,7 +18,7 @@ body{
 /**/
 .colorRed{
     color: rgba(255, 0, 39, 0.9);
-    text-shadow: 1px 1px 20px rgba(255, 0, 39, 0.9); 
+    text-shadow: 1px 1px 1px rgba(255, 0, 39, 0.9); 
     
 }
 .blackBackground{
@@ -340,7 +340,7 @@ h3.titleSection{
 #T{
     background-image: url(../recursos/tram2.jpg);
     background-position: bottom;
-    background-size: contain;
+    background-size: cover;
     padding: 10%;
     float: left;
 }
@@ -419,22 +419,4 @@ h3.titleSection{
     .square{
         width: 35%;
 
-}
-
-/*END Tram*/
-#contenedorCanalBus{
-    background-color: red;
-}
-/*Section Movil*/
-
-@media screen and (max-width: 300px){
-    #bicycle{
-        display: none;
-    }
-    
-    .handheld{
-        background-color: black;
-        display: block;
-    }
-    
 }
