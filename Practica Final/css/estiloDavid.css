@@ -320,11 +320,11 @@ a:hover {color:#ffffff;}
 
         .cuerpoSeccion{            
             position: absolute;
-            display: inline-block;
-                       
+            display: block;
+                     
             margin-top: 180px;
             width: 100%;    
-            height: 300px;
+            height: 400px;
         }
 
         .textoCuerpo{   
@@ -1223,3 +1223,28 @@ a:hover {color:#ffffff;}
     }
 }
 
+
+/*****************/
+
+/* CSS SECCION HISTORIA */
+
+/*******************/
+    .botonaudio{
+        position:absolute;
+      
+     
+
+        margin-left: 40px;
+      
+        font-size: 5vw;
+        background-color: red;
+        display: inline-block;
+    }
+
+    #fondoHistoria{
+        background-image: url(../recursos/fondohistoria.jpg);
+    }
+
+    #historia1{
+/*        background-image: url(../recursos/barco.jpg);*/    
+    }
