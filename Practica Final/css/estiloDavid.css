@@ -20,6 +20,21 @@ a:visited {color:#ffffff;}
 a:active {color:#ffffff;}
 a:hover {color:#ffffff;}
 
+.enlaceNegro{
+    color:black;
+}
+.enlaceNegro:link{
+    color:black;
+}
+.enlaceNegro:visited{
+    color:black;
+}
+.enlaceNegro:active{
+    color:black;
+}
+.enlaceNegro:hover{
+    color:black;
+}
 
 .wrapper{
     height: 100%; 

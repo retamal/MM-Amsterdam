@@ -55,7 +55,7 @@ type="text/javascript" charset="utf-8"></script>
                 <div id="textoAmsterdam">
                     <h1>ÁMSTERDAM</h1>
                 </div>
-                <div id="descripcionAmsterdam">Valiente, inquebrantable y compasiva</div>
+                <div id="descripcionAmsterdam"><h2>Valiente, inquebrantable y compasiva</h2></div>
             </div>
         </section>
         
@@ -65,7 +65,7 @@ type="text/javascript" charset="utf-8"></script>
                 <div class="seccionIndex">
                     <div class="cabeceraSeccion">
                         <div class="tituloCabecera">
-                            <h4>Historia</h4>
+                            <h3>Historia</h3>
                         </div>
                     </div>
                     <div class="subtituloSeccion">
@@ -91,7 +91,7 @@ La Corona Imperial de Austria fue obsequiada a la ciudad en el año 1489 por Max
                    <div class="seccionIndex">
                         <div class="cabeceraSeccion">
                             <div class="tituloCabecera blanco">
-                                <h4>Déjate enamorar</h4>
+                                <h3>Déjate enamorar</h3>
                             </div>
                         </div>
                        <div class="restoSeccion">
@@ -161,7 +161,7 @@ La Corona Imperial de Austria fue obsequiada a la ciudad en el año 1489 por Max
                             <div class="descripTrans">Disponible las 24h del día
                             </div>                        
                         </div>  
-                        <a href="index3.html" class="enlace" style="color:black;">
+                        <a href="index3.html" class="enlace enlaceNegro">
                         <div class="contenedorTransporte">
                             <div class="imagenTrans bici">
                             </div>
@@ -259,12 +259,12 @@ La Corona Imperial de Austria fue obsequiada a la ciudad en el año 1489 por Max
                         <div id="contenedorPostal">
                             <form>
                                 <label class="aspectoLabel" for="destinatario">Destinatario</label>
-                                <input type="text" id="destinatario" class="entradaPosta" placeholder="Destinatario" required/>
+                                <input title="destinatario" type="text" id="destinatario" name="destinatario" class="entradaPosta" placeholder="Destinatario"></input>
                                 <label class="aspectoLabel" for="asunto">Asunto</label>
-                                <input type="text" id="asunto" class="entradaPosta alinear" placeholder="Asunto" required/>
+                                <input type="text" id="asunto" name="asunto" class="entradaPosta alinear" placeholder="Asunto" ></input>
                                 <label class="aspectoLabel" for="textoform" >Texto</label>
-                                 <textarea class="textoPostal" rows="4" cols="50" placeholder=" Cuerpo del mensaje" id="textoform" required></textarea> 
-                    <input type="submit" class="botonPostal"/>
+                                 <textarea class="textoPostal" rows="4" cols="50" name="texto" placeholder=" Cuerpo del mensaje" id="textoform" ></textarea> 
+                    <input type="submit" id="botonFormula" value="Enviar" name="botonFormula" class="botonPostal"/>
                             </form>
                         </div>
                     </div>  
@@ -275,10 +275,26 @@ La Corona Imperial de Austria fue obsequiada a la ciudad en el año 1489 por Max
        
             <div id="footer"><a href="#top">MMAmsterdam © David Retamal Rojas y Elena Salcedo Ortega.</a>   
   
+                <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fmmamsterdam.hol.es%2F">
+                    <img style="border:0;width:88px;height:31px"
+            src="recursos/certificado.png"
+            alt="¡HTML5 Válido!" />
+                </a>
+                
                 <a href="http://jigsaw.w3.org/css-validator/check/referer">
                     <img style="border:0;width:88px;height:31px"
             src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
             alt="¡CSS Válido!" />
+                </a>
+                
+                 <a href="http://www.tawdis.net/system/modules/org.fundacionctic.taw4_wcag_informes_ocms/elements/wcag20/resumen.jsp?url=http%3A%2F%2Fmmamsterdam.hol.es&crc=1&nivel=aaa"
+	title="Explicación del Nivel Triple-A de 
+	Conformidad">
+            <img height="32" width="88" 
+                src="http://www.w3.org/WAI/wcag1AAA-blue"
+                alt="Icono de conformidad con el Nivel Triple-A, 
+                de las Directrices de Accesibilidad para el 
+                Contenido Web 1.0 del W3C-WAI">
                 </a>
             </div>
        
