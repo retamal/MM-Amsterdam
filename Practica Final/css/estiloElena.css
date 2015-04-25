@@ -35,7 +35,6 @@ body{
 }
 /**/
 
-
 /*BEGIN Text style*/
 .mayusFont{
     font-weight: normal;
@@ -83,7 +82,6 @@ h4.white{
     height: auto;
     background-position: center;
 }
-
 /*END Section*/
 
 /*BEGIN Section Index*/
@@ -103,7 +101,7 @@ h4.white{
 }
 
 .trans8{
-    opacity: 0.8;
+    opacity: 0.9;
 }
 /*END div Styles*/
 /*BEGIN Section Bicycle*/
@@ -114,7 +112,7 @@ h4.white{
     padding: 4%;
 }
 
-.bicycleHandheld{
+#bicycleHandheld{
     display: none;
 }
 /*END Section Bicycle*/
@@ -141,19 +139,6 @@ h4.white{
 
 /*BEGIN Canal Bus*/
 
-/*-------------------------------*/
-
-#CB{
-    float: left;
-    background-image: url(../recursos/amsterdam_canal_house_bridge_boat_hd-wallpaper-1791801.jpg); 
-    background-position: bottom;
-}
-
-h3.titleSection{
-    color: white;
-    padding-top: 2%;
-    font-size: 4.65vw;
-}
 
 /*BEGIN Slider*/
 
@@ -177,11 +162,24 @@ un elemento u otro */
 #elementOrange:checked ~ #slider-container #slider-box {
     margin-left: -200%;
 }
+/*-------------------------------*/
+
+#CB{
+    float: left;
+    background-image: url(../recursos/amsterdam_canal_house_bridge_boat_hd-wallpaper-1791801.jpg); 
+    background-position: bottom;
+}
+
+h3.titleSection{
+    color: white;
+    padding-top: 2%;
+    font-size: 4.65vw;
+}
 
 #slider-container{
-    width: 30%;
-    height: 20%;
+    width: 55%;
     overflow: hidden;
+    margin-left: 2%
 }
 
 #slider-box{
@@ -191,22 +189,30 @@ un elemento u otro */
     -ms-transition: all 0.75s ease;
     -o-transition: all 0.75s ease;
     transition: all 0.75s ease;
+    padding: 5%;
 }
 
 .slider-element{
     float: left;    /*el ancho se atoajusta al contenido*/    
-    width: 33.333%;
+    width: 33.333%;    
 }
 
 .slider-element img{
-    max-height: 80%;
-    width: 100%
+    max-height: 100%;
+    width: 100%;
 }
 
 #slider-arrows{
     width: 50%;
     margin-top: -18%;
     margin-left: 5%;
+}
+
+#elementRed:checked ~ #slider-arrows label:nth-child(2),
+#elementGreen:checked ~ #slider-arrows label:nth-child(3),
+#elementOrange:checked ~ #slider-arrows label:nth-child(1){
+    display: block;
+    float: right;
 }
 
 #elementRed:checked ~ #slider-arrows label:nth-child(3),
@@ -219,21 +225,6 @@ un elemento u otro */
 #slider-arrows label{
     cursor: pointer;
     font-size: 3vw;
-}
-
-#elementRed:checked ~ #slider-arrows label:nth-child(3),
-#elementGreen:checked ~ #slider-arrows label:nth-child(1),
-#elementOrange:checked ~ #slider-arrows label:nth-child(2){
-    display: block;
-    float: left;
-}
-
-#slider-arrows label{
-    cursor: pointer;
-    display: none;
-    font-size: 30px;
-    height: 20px;
-    width: 20px;
 }
 
 #elementRed:checked ~ #slider-arrows label:nth-child(3):before,
@@ -324,7 +315,12 @@ un elemento u otro */
 
 /*BEGIN Tram*/
 #backgroundT{
-    background-image: url(../recursos/1024px-Centraal_Station_Stationsplein,_Amsterdam.jpg)
+    background-image: url(../recursos/1024px-Centraal_Station_Stationsplein,_Amsterdam.jpg);
+}
+
+.rectangleR{
+        background-color: rgba(0, 0, 0, 0.4);
+    }
 }
 
 /*END Tram*/
@@ -332,19 +328,17 @@ un elemento u otro */
 /*Movil*/
 
 @media screen and (max-width: 300px){
-    /*BEGIN Section Bicycle*/
     #bicycle{
         display: none;
     }
-    #contenedorBicycle{
-        background-color: rgba(0, 0, 0, 0.85);
-    }
-    .bicycleHandheld{
+    #contenedorCanalBus{
+        display: none;
+    }   
+    
+    .handheld{
         background-color: black;
         display: block;
     }
-    #contenedorCanalBus{
-        display: none;
-    }
+    
     /*END Section Bicycle*/
 }
