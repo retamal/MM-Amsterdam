@@ -1334,23 +1334,24 @@ a:hover {color:#ffffff;}
         background-image: url(../recursos/fondoh3.jpg);
         background-repeat: no-repeat;
         background-size:cover; 
-        height:800px;        
+        
+    }
+    #historia4{
+        background-image: url(../recursos/fondoh4.jpg);
+        background-repeat: no-repeat;
+        background-size:cover; 
+        
     }
     .contendorCuerpoTexto{
        
         text-align: justify;
         padding: 30px;
         font-size: 1.5vw;
-        padding-top: 60px;        
+        padding-top: 60px;
+        
         text-shadow: 2px 0px 1px rgb(255, 255, 255);
 
     }
-
-@media (max-width: 1300px) {
-
-    
-}
-
 
 @media (max-width: 1000px) {
     #historia1{  
@@ -1361,6 +1362,9 @@ a:hover {color:#ffffff;}
     }
     #historia3{  
         height:750px;
+    }
+    #historia4{  
+        height:650px;
     }
     .contendorCuerpoTexto{
         margin-top: 110px;
@@ -1375,8 +1379,11 @@ a:hover {color:#ffffff;}
     #historia2{  
         height:1150px;
     }
-    #historia3{  
-        height:1050px;
+    #historia3{
+        height: 1100px;
+    }
+    #historia4{
+        height: 850px;
     }
     
     .contendorCuerpoTexto{
@@ -1389,7 +1396,10 @@ a:hover {color:#ffffff;}
     #historia2{  
         height:850px;
     } 
-     #historia3{  
-        height:850px;
-    } 
+    #historia3{
+        height: 850px;
+    }
+    #historia4{
+        height: 700px;
+    }
 }
