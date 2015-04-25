@@ -112,7 +112,7 @@ h4.white{
     padding: 4%;
 }
 
-#bicycleHandheld{
+.handheld{
     display: none;
 }
 /*END Section Bicycle*/
@@ -255,7 +255,7 @@ h3.titleSection{
 /*END Slider*/
 
 /*BEGIN Circles*/
-.rectangle{
+.rectangleR{
     float: right;
     width: 35%;
     margin-right: 3%;
@@ -318,7 +318,7 @@ h3.titleSection{
     background-image: url(../recursos/1024px-Centraal_Station_Stationsplein,_Amsterdam.jpg);
 }
 
-.rectangleR{
+.rectangle{
         background-color: rgba(0, 0, 0, 0.4);
     }
 }
