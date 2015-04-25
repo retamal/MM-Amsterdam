@@ -4,6 +4,15 @@
     box-sizing: border-box; /* el navegador interpreta el width/hight % incluyendo padding */
 }
 
+p{
+    font-size: 15px; /*explorer*/
+    font-size: 1.5rem;    
+    line-height: 1.33334;    
+    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
 body{
     text-align: center;
 }
@@ -138,7 +147,9 @@ h4.white{
 /*END Desplegable Description List*/
 
 /*BEGIN Canal Bus*/
-
+.content {
+    padding: 5%;
+}
 
 /*BEGIN Slider*/
 
@@ -165,9 +176,10 @@ un elemento u otro */
 /*-------------------------------*/
 
 #CB{
-    float: left;
-    background-image: url(../recursos/amsterdam_canal_house_bridge_boat_hd-wallpaper-1791801.jpg); 
+    background-image: url(../recursos/Rondvaartboot-Canal-Cruise-Amsterdam-kopie.jpg); 
     background-position: bottom;
+    position: absolute;
+    width: 100%;
 }
 
 h3.titleSection{
@@ -177,7 +189,7 @@ h3.titleSection{
 }
 
 #slider-container{
-    width: 55%;
+    width: 100%;
     overflow: hidden;
     margin-left: 2%
 }
@@ -189,7 +201,6 @@ h3.titleSection{
     -ms-transition: all 0.75s ease;
     -o-transition: all 0.75s ease;
     transition: all 0.75s ease;
-    padding: 5%;
 }
 
 .slider-element{
@@ -203,9 +214,9 @@ h3.titleSection{
 }
 
 #slider-arrows{
-    width: 50%;
-    margin-top: -18%;
-    margin-left: 5%;
+    width: 95%;
+    margin-top: -30%;
+    margin-left: 4%;
 }
 
 #elementRed:checked ~ #slider-arrows label:nth-child(2),
@@ -224,7 +235,7 @@ h3.titleSection{
 
 #slider-arrows label{
     cursor: pointer;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 #elementRed:checked ~ #slider-arrows label:nth-child(3):before,
@@ -256,12 +267,10 @@ h3.titleSection{
 
 /*BEGIN Circles*/
 .rectangleR{
-    float: right;
-    width: 35%;
+    width: 100%;
+    padding-bottom: 9%;
     margin-right: 3%;
-    
     box-sizing: content-box;
-    padding: 8% 0;
     align-content: center;
     text-align: center;
     vertical-align: middle;
@@ -271,7 +280,7 @@ h3.titleSection{
     box-sizing: content-box;
     padding: 3%; 
     display: inline-block;
-    width: 35%;
+    width: 17%;
 }
 
 .circle {
@@ -318,27 +327,88 @@ h3.titleSection{
     background-image: url(../recursos/1024px-Centraal_Station_Stationsplein,_Amsterdam.jpg);
 }
 
-.rectangle{
-        background-color: rgba(0, 0, 0, 0.4);
+.show-tablet{
+    display: none;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.responsive-columns{
+    margin: 20px;
+    margin: 2rem;
+}
+
+@media (min-width: 400px){
+    .show-tablet{
+        display: block;
+    }
+    /*tram*/
+    .responsive-columns{
+        -webkit-column-count:2; /*Chrome, Safari, Opera*/
+        -moz-column-count:2; /*Firefox*/
+        column-count: 2;
+
+        -webkit-column-gap:40px; /*Chrome, Safari, Opera*/
+        -moz-column-gap:40px; /*Firefox*/
+        column-gap: 40px;
+
+        -webkit-column-gap:3rem; /*Chrome, Safari, Opera*/
+        -moz-column-gap:3rem; /*Firefox*/
+        column-gap: 3rem;
+
+        -webkit-column-rule:5px solid rgb(75, 180, 149); /*Chrome, Safari, Opera*/
+        -moz-column-rule:5px solid rgb(75, 180, 149); /*Firefox*/
+        column-rule: 5px solid rgb(75, 180, 149);
+
+        -webkit-column-rule:0.5rem solid rgb(75, 180, 149); /*Chrome, Safari, Opera*/
+        -moz-column-rule:0.5rem solid rgb(75, 180, 149); /*Firefox*/
+        column-rule: 0.5rem solid rgb(75, 180, 149);
+    }
+    /*canal bus*/
+    .rectangleR{
+        float: none;
     }
 }
 
-/*END Tram*/
+@media (min-width: 500px){
+    /**/
+    .responsive-columns{
+        -webkit-column-count:3; /*Chrome, Safari, Opera*/
+        -moz-column-count:3; /*Firefox*/
+        column-count: 3;
+    }
+    
+    /*canal bus*/
+    #slider-container{
+        width: 55%;
+    }
+    #slider-arrows{
+        width: 55%;
+        margin-top: -20%;
+        margin-left: 2%;
+    }
+    .rectangleR{
+        float: right;
+        width: 35%;
+    }
+    .square{
+        width: 35%;
+        
+}
 
-/*Movil*/
+/*END Tram*/
+#contenedorCanalBus{
+    background-color: red;
+}
+/*Section Movil*/
 
 @media screen and (max-width: 300px){
     #bicycle{
         display: none;
     }
-    #contenedorCanalBus{
-        display: none;
-    }   
     
     .handheld{
         background-color: black;
         display: block;
     }
-    
-    /*END Section Bicycle*/
 }

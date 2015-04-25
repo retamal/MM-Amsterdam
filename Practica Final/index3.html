@@ -15,7 +15,7 @@ http://examinator.ws/
     <!--<BASE HREF="http://www.mmamsterdam.hol.es/">-->
     <TITLE>Proyecto Multimedia Amsterdam</TITLE>
         
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"/>
     <link type="text/css" rel="stylesheet" href="css/estiloElena.css" />
    
     <link href='http://fonts.googleapis.com/css?family=Ruluko|Duru+Sans' rel='stylesheet' type='text/css'>
@@ -28,7 +28,7 @@ type="text/javascript" charset="utf-8"></script>
 
 </head>
 
-<body>    
+<body>
     <section class="contenedorImage" id="backgroundIndexMT">       
         <div id="MT">
             <h1 class="mayusFont title">Medios de transporte</h1>
@@ -37,82 +37,81 @@ type="text/javascript" charset="utf-8"></script>
     </section>
     <section> 
         <img id="bicycle" src="recursos/beneficios-de-la-bicicleta.jpg" alt="Usar la bicicleta es fácil, económico and so mainstream" title="La bicicleta en Ámsterdam"/>
-        
+        <!--
         <div class="handheld">
             
             <dl class="desplegableDL">
                 <dt><h4 class="mayusFont white">Beneficios de la bicicleta</h4></dt>
                 <dd>¡Ámsterdam cuenta con 15.000 km de carril bici! Además el metro está adaptado para viajar sobre ruedasAhorra emisiones de CO<sup>2</sup> y es beneficioso para tu salud.Alquilar una bicicleta cuesta 10€/día aprox. e incluye material antirrobo.</dd>
             </dl>
-        </div>
+        </div>-->
     </section>
     
+   
     <section class="contenedorImage" id="CB">
-        <div id="contenedorCanalBus">
-            <h3 class="titleSection mayusFont">Canal Bus</h3>
+        <h3 class="titleSection mayusFont">Canal Bus</h3>
+            <div class="content">
+                <div class="rectangleR">
+                    <div class="square">
+                        <div class="trans8 yellowBackground circle">
+                            <span class="icon price"></span>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <div class="trans8 greenBackground circle">
+                            <span class="icon wifi"></span>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <div class="trans8 redBackground circle">
+                            <span class="icon audioGuide"></span>
+                        </div>
+                    </div>
+                    <div class="square">
+                        <div class="trans8 blueBackground circle">
+                            <span class="icon app"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="show-tablet"> 
+                    <input type="radio" name="slider-select-element" id="elementRed" checked="checked"/>
+                    <input type="radio" name="slider-select-element" id="elementGreen"/>
+                    <input type="radio" name="slider-select-element" id="elementOrange"/>
+                    <div id="slider-container">
+                        <div id="slider-box">
+                            <div class="slider-element">
+                                <img id="red-line" src="recursos/rode-lijn_5.jpg">
+                            </div>
+                            <div class="slider-element">
+                                <img id="green-line" src="recursos/groene-lijn-zomer-2015_6.jpg">
+                            </div>
+                            <div class="slider-element">
+                                <img id="orange-line" src="recursos/Oranje-lijn-zomer-2015_5.jpg">
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="rectangleR">
-                <div class="square">
-                    <div class="trans8 yellowBackground circle">
-                        <span class="icon price"></span>
+                    <div id="slider-arrows">
+                        <label for="elementRed"></label>
+                        <label for="elementGreen"></label>
+                        <label for="elementOrange"></label>
                     </div>
-                </div>
-                <div class="square">
-                    <div class="trans8 greenBackground circle">
-                        <span class="icon wifi"></span>
-                    </div>
-                </div>
-                <div class="square">
-                    <div class="trans8 redBackground circle">
-                        <span class="icon audioGuide"></span>
-                    </div>
-                </div>
-                <div class="square">
-                    <div class="trans8 blueBackground circle">
-                        <span class="icon app"></span>
-                    </div>
-                </div>
+                </div>                
             </div>
-                
-            <input type="radio" name="slider-select-element" id="elementRed" checked="checked"/>
-            <input type="radio" name="slider-select-element" id="elementGreen"/>
-            <input type="radio" name="slider-select-element" id="elementOrange"/>
-            <div id="slider-container">
-                <div id="slider-box">
-                    <div class="slider-element">
-                        <img id="red-line" src="recursos/rode-lijn_5.jpg">
-                    </div>
-                    <div class="slider-element">
-                        <img id="green-line" src="recursos/groene-lijn-zomer-2015_6.jpg">
-                    </div>
-                    <div class="slider-element">
-                        <img id="orange-line" src="recursos/Oranje-lijn-zomer-2015_5.jpg">
-                    </div>
-                </div>
-            </div>
-            
-            <div id="slider-arrows">
-                <label for="elementRed"></label>
-                <label for="elementGreen"></label>
-                <label for="elementOrange"></label>
-            </div>
-        </div>
+        <!--
         <div class="handheld">
-            <!-- falta movil -->
             <dl class="desplegableDL">
                 <dt><h4 class="mayusFont white">Turismo en Canal Bus</h4></dt>
                 <dd>Sube al Canal Bus y viaja a través de los canales de Amsterdam. Este crucero te llevará a través de los canales y también pasará por todos los museos famosos de Amsterdam, como el Rijksmuseum y la casa de Anne Frank. También hace paradas en Rembrandtplein y el bullicioso mercadillo de Albert Cuyp. Lo bueno es que en cualquiera de las 3 líneas del Canal bus que estés, puedes subirte y bajarte del barco en cualquiera de las 16 paradas que hace.</dd>
             </dl>
-        </div>
+        </div>-->
     </section>
-    
-    <!--TRANVIA-->
-    <section class="contenedorImage" id="backgroundT">
-        <div>
-            hola
-            <div class="rectangle">hoil
+         <!--TRANVIA-->
+    <section>
+            <div class="responsive-columns">
+                <p>El tranvía en Ámsterdam es el medio de transporte público más habitual en el centro de la ciudad y el más costeado, además instaurado en la ciudad 8 años antes que el autobús. La dificultad para construir un metro en el subsuelo de Ámsterdam, ha ayudado a que así sea.</p>
+                <p>Actualmente el tranvía es el medio más utilizado para viajar por la ciudad incluso a zonas de la periferia (aunque este tipo de viajes más largos quizá son mejor hacerlos en metro). Existen un total de 16 líneas de tranvía que realizan una media de 3.600 viajes al día. Realizando paradas en lugares estratégicos y turísticos de la ciudad.</p>
             </div>
-        </div>
         <div class="handheld">
             
             <dl class="desplegableDL">
@@ -123,6 +122,7 @@ Al circular tan pocos coches por el centro de la ciudad, los tranvías son basta
             </dl>
         </div>
     </section>
+    
 </body>
 
 </html>
