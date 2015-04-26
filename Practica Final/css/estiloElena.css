@@ -4,7 +4,7 @@
     box-sizing: border-box; /* el navegador interpreta el width/hight % incluyendo padding */
 }
 
-p{
+article p{
     font-size: 15px; /*explorer*/
     padding-bottom: 20px;
     padding-bottom: 2rem;
@@ -13,16 +13,31 @@ p{
 
 body{
     text-align: center;
+    display: inline-block;
 }
 
+.hover{
+    display: none;
+}
 /**/
 .colorRed{
     color: rgba(255, 0, 39, 0.9);
     text-shadow: 1px 1px 1px rgba(255, 0, 39, 0.9); 
     
 }
+.colorBlue{
+    color: rgba(75, 180, 149, 0.9);
+    text-shadow: 1px 1px 1px rgba(75, 180, 149, 0.9); 
+    
+}
+.colorWhite{
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9); 
+    
+}
 .blackBackground{
     background-color: rgba(0, 0, 0, 0.47);
+    color: white;
 }
 
 .greenBackground{
@@ -65,7 +80,6 @@ body{
     font-size: 10vw;
 }
 
-
 .title2{
     text-shadow: 1px 1px 4px black;
     font-size: 9vw;
@@ -73,14 +87,25 @@ body{
     letter-spacing: 0.05em;
 }
 
-.description {    
+.description{
     color:white;
-    font-size: 3vw;
     background-color: rgba(0, 0, 0, 0.6);
     text-shadow: 1px 1px 20px black;
     padding: 0.5%;
+}
+
+h3.description {        
+    font-size: 3vw;    
     width: 50%;
     padding-left: 10%;
+}
+
+h4.description{
+    font-size: 2vw;
+    width: 100%;
+    text-align: left;
+    padding-left: 5%;
+    margin-top: -1.5rem;
 }
 
 h4.white{
@@ -93,6 +118,7 @@ h4.white{
 
 /*BEGIN Section*/
 .contenedorImage{
+    display: inline-block;
     background-size:auto;
     background-repeat: no-repeat;
     height: auto;
@@ -111,15 +137,18 @@ h4.white{
 }
 /*End Index*/
 
-/*BEGIN div Styles*/
+/*BEGIN Taxi*/
+.wrapperWidth80{
+    width: 80%;
+    display: inline-block;
+}
+/*END Taxi*/
 
-/*END div Styles*/
 /*BEGIN Section Bicycle*/
 
 #bicycle{
     max-width:100%;
     height:auto;    
-    padding: 4%;
 }
 
 .handheld{
@@ -148,7 +177,7 @@ h4.white{
 /*END Desplegable Description List*/
 
 /*BEGIN Canal Bus*/
-.content {
+.wrapperPadding5 {
     padding: 5%;
 }
 
@@ -179,14 +208,13 @@ un elemento u otro */
 #CB{
     background-image: url(../recursos/Rondvaartboot-Canal-Cruise-Amsterdam-kopie.jpg); 
     background-position: bottom;
-    position: absolute;
-    float: left;
+    background-size: cover;
     width: 100%;
 }
 
 h3.titleSection{
     padding-top: 5%;
-    font-size: 4.65vw;
+    font-size: 5vw;
 }
 
 #slider-container{
@@ -299,25 +327,43 @@ h3.titleSection{
     -moz-osx-font-smoothing:antialiased;
 }
 
-.price{
-}
 .price:before{
     content: "\f0d6";
-}
-.wifi{
 }
 .wifi:before{
     content: "\f1eb";
 }
-.audioGuide{
-}
 .audioGuide:before{
     content: "\f025";
 }
-.app{
-}
 .app:before{
     content: "\f10b";
+}
+.circle:hover > .hover{
+    display: inline-block;
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin-left: -0.2rem;
+    text-align: justify;
+}
+
+.circle:hover > .icon{
+    display: none;
+}
+
+.circle:hover{
+    width: 20%;
+    border-radius: 4%;
+    position: absolute;
+    padding: 3%;
+    margin-top: -6.5%;
+    margin-left: -2%;
+}
+
+div p{
+    margin-left: 10%;
+    padding: 0;
+    font-style: normal;
 }
 /*END Circles*/
 
@@ -325,7 +371,6 @@ h3.titleSection{
 /*END Canal Bus*/
 
 /*BEGIN Tram*/
-
 .responsive-columns h4{
     color: red;
     font-weight: bold;
@@ -333,16 +378,17 @@ h3.titleSection{
 }
 
 #tramArticle{
-    width: 80%;
+    width: 100%;
     float: left;
 }
 
 #T{
-    background-image: url(../recursos/tram2.jpg);
-    background-position: bottom;
-    background-size: cover;
-    padding: 10%;
-    float: left;
+    background-image: url(../recursos/tram.jpg);
+    background-position: right;
+    background-size: contain;
+    padding: 30%;
+    float: right;
+    display: inline-block;
 }
 
 #backgroundT{
@@ -387,6 +433,19 @@ h3.titleSection{
     #slider-arrows{
         padding-bottom: 30%;
     }
+    
+    .circle:hover > .hover{
+    margin-left: -0.2rem;
+}
+
+.circle:hover{
+    width: 20%;
+    border-radius: 4%;
+    position: absolute;
+    padding: 3%;
+    margin-top: -6.5%;
+    margin-left: -2%;
+}
 }
 
 @media (min-width: 900px){
@@ -418,5 +477,28 @@ h3.titleSection{
     }
     .square{
         width: 35%;
+    }
+    
+    div p{
+        margin-left: 0;
+    }
+    .circle:hover{
+        padding: 0.5%;
+    }
+    .circle:hover[id="priceText"]{
+        margin-left: -6.5rem;
+        margin-top: -3rem;
+    }
+    .circle:hover[id="wifiText"]{
+        margin-left: -0.5rem;
+        margin-top: -3.5rem;
+    }
+    .circle:hover[id="audioGuideText"]{
+        margin-left: -6.5rem;
+        margin-top: -5.5rem;
+    }
+    .circle:hover[id="appText"]{
+        margin-left: -0.5rem;
+        margin-top: -5.5rem;
     }
 }
