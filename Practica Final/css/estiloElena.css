@@ -5,7 +5,7 @@
 }
 
 article p{
-    font-size: 15px; /*explorer*/
+    font-size: 1.5vw; /*explorer*/
     padding-bottom: 20px;
     padding-bottom: 2rem;
     text-align: justify;
@@ -20,6 +20,12 @@ body{
     display: none;
 }
 /**/
+.colorOrange{
+    color: rgba(255, 167, 0, 0.9);
+    text-shadow: 1px 1px 1px rgba(255, 167, 0, 0.9); 
+    
+}
+
 .colorRed{
     color: rgba(255, 0, 39, 0.9);
     text-shadow: 1px 1px 1px rgba(255, 0, 39, 0.9); 
@@ -54,6 +60,36 @@ body{
 
 .redBackground{
     background-color: rgba(211, 19, 19, 0.7);
+}
+
+
+
+#kaassouffleBackground{
+    background-image: url(../recursos/power-ranking-the-febo-automat-s-wall-of-food.jpg);
+    background-position: center;
+    height: 1vw;
+    background-size: cover;
+}
+
+#kalfskroketBackground{
+    background-image: url(../recursos/kalfskroket.jpg);
+    background-position: center;
+    height: 1vw;
+    background-size: cover;
+}
+
+#kipburgerBackground{
+    background-image: url(../recursos/kipburguer.jpg);
+    background-position: center;
+    height: 1vw;
+    background-size: cover;
+}
+
+#bamiBackground{
+    background-image: url(../recursos/bami.jpg);
+    background-position: center;
+    height: 1vw;
+    background-size: cover;
 }
 
 .show-pc{
@@ -99,13 +135,15 @@ h3.description {
     width: 50%;
     padding-left: 10%;
 }
+h4{
+
+    font-size: 2vw;
+}
 
 h4.description{
-    font-size: 2vw;
     width: 100%;
     text-align: left;
     padding-left: 5%;
-    margin-top: -1.5rem;
 }
 
 h4.white{
@@ -123,6 +161,8 @@ h4.white{
     background-repeat: no-repeat;
     height: auto;
     background-position: center;
+    
+    width: 100%;
 }
 /*END Section*/
 
@@ -209,7 +249,6 @@ un elemento u otro */
     background-image: url(../recursos/Rondvaartboot-Canal-Cruise-Amsterdam-kopie.jpg); 
     background-position: bottom;
     background-size: cover;
-    width: 100%;
 }
 
 h3.titleSection{
@@ -295,9 +334,8 @@ h3.titleSection{
 /*END Slider*/
 
 /*BEGIN Circles*/
-.rectangleR{
+.rectangle{
     width: 100%;
-    padding-bottom: 9%;
     margin-right: 3%;
     box-sizing: content-box;
     align-content: center;
@@ -314,6 +352,12 @@ h3.titleSection{
 
 .circle {
     padding: 27%;
+    border-radius: 50%;
+    color: white;
+}
+
+.empty-circle {
+    padding: 50%;
     border-radius: 50%;
     color: white;
 }
@@ -372,7 +416,7 @@ div p{
 
 /*BEGIN Tram*/
 .responsive-columns h4{
-    color: red;
+    color: rgb(75, 180, 149);
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(255, 0, 0, 0.3);  
 }
@@ -400,6 +444,55 @@ div p{
     padding: 2rem;
 }
 
+/*END Tram*/
+/*BEGIN Bus*/
+.div-box{
+    position: relative;
+    text-align: justify;
+    height: 100%;
+    float: left;
+    border-radius: 55%;
+    padding: 1%;
+}
+
+.box16{
+    width: 16%;
+}
+
+.box20{
+    width: 20%;
+}
+
+.box38{
+    width: 38%;
+}
+/*END Bus*/
+/*_---------------------------------------_*/
+/*BEGIN Comida*/
+#QC{
+    padding: 13% 14%;
+    
+    padding-left: 2%;
+    padding-left: 2%;
+}
+#backgroundIndexC{
+    background-image: url(../recursos/quecomer.jpg);
+}
+
+#feboBackground{
+    background-image: url(../recursos/FEBO_food_vending_machine.JPG);
+}
+
+.box{
+    color: white;
+    width: 100%;
+    height: 20rem;
+    padding: 15% 12%;
+     background-image: url(../recursos/FEBO_food_vending_machine.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*END Comida*/
 @media (min-width: 400px){
     .show-tablet{
         display: block;
@@ -427,7 +520,7 @@ div p{
         column-rule: 0.5rem solid rgb(75, 180, 149);
     }
     /*canal bus*/
-    .rectangleR{
+    .rectangle{
         float: none;
     }
     #slider-arrows{
@@ -438,14 +531,14 @@ div p{
     margin-left: -0.2rem;
 }
 
-.circle:hover{
-    width: 20%;
-    border-radius: 4%;
-    position: absolute;
-    padding: 3%;
-    margin-top: -6.5%;
-    margin-left: -2%;
-}
+    .circle:hover{
+        width: 20%;
+        border-radius: 4%;
+        position: absolute;
+        padding: 3%;
+        margin-top: -6.5%;
+        margin-left: -2%;
+    }
 }
 
 @media (min-width: 900px){
@@ -471,9 +564,10 @@ div p{
         margin-top: -20%;
         margin-left: 2%;
     }
-    .rectangleR{
-        float: right;
-        width: 35%;
+    .rectangle{
+        padding-top: 5%;
+        float: left;
+        width: 45%;
     }
     .square{
         width: 35%;
