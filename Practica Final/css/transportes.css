@@ -1,0 +1,30 @@
+#fondoTransporte{
+        background-image: url(http://www.landscape-photo.net/albums/userpics/10001/Amsterdam_-03.jpg);
+    }
+
+    #transporte2{
+        background-image: url(../recursos/transporteFondo2.jpg);
+        background-repeat: no-repeat;
+        background-size:cover; 
+        
+    }
+
+    #historia3{
+        background-image: url(../recursos/fondoh3.jpg);
+        background-repeat: no-repeat;
+        background-size:cover; 
+        
+    }
+
+    #historia4{
+        background-image: url(../recursos/fondoh4.jpg);
+        background-repeat: no-repeat;
+        background-size:cover; 
+        
+    }
+    #historia5{
+        background-image: url(../recursos/fondoh5.jpg);
+        background-repeat: no-repeat;
+        background-size:cover; 
+        
+    }

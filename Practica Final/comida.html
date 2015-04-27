@@ -14,9 +14,17 @@ http://examinator.ws/
     <META CHARSET="UTF-8">
     <!--<BASE HREF="http://www.mmamsterdam.hol.es/">-->
     <TITLE>Proyecto Multimedia Amsterdam</TITLE>
-        
+    <meta name="keywords" content="mmamsterdam, guia, turistica, amsterdam, vacaciones, lugares, visitar, bonito, holanda, paises, bajos, paises bajos, lugares, descubrir, hachis, coffee, shop, barrio, rojo, canales, ocio, gastronomia, medios, transporte, monumentos, museos, bicileta, bici, proyecto, universidad, multimedia, mm"/>
+    <meta name="description" content="Conocer los principales atractivos de la ciudad de Amsterdam"/>
+    <meta name="copyright" content="David Retamal Rojas y Elena Salcedo Ortega"/>
+    <meta name="language" content="es"/>
+    <meta name="revisit-after" content="1 month"/>
+    <meta name="robots" content="index, follow"/>
+ 
+    <META NAME="MMAmsterdam" CONTENT="Proyecto para Multimedia sobre la ciudad de Amsterdam"/>  
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"/>
     <link type="text/css" rel="stylesheet" href="css/estiloElena.css" />
+    <link type="text/css" rel="stylesheet" href="css/estiloDavid.css" />
    
     <link href='http://fonts.googleapis.com/css?family=Ruluko|Duru+Sans' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,6 +37,17 @@ type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
+        <div id="top"></div>
+        <div id="contenedorMenu">
+            <ul>
+                <li class="elementoMenu"><a class="enlace" href="#kroket">Croquetas</a></li>
+                <li class="elementoMenu"><a class="enlace" href="#backgroundApplePie">Postre</a></li>
+                
+                <li class="elementoMenu"><a class="enlace" href="#febo">FEBO</a></li>
+                <li class="elementoMenu" style="background-color:rgb(255, 157, 0);"><a class="enlace" href="#top" >Qué comer</a></li>
+                <li class="elementoMenu" style="background-color:rgba(44, 155, 204, 0.85);"><a class="enlace" href="index.html">Home</a></li>
+            </ul>
+        </div>
     <section class="contenedorImage" id="backgroundIndexC">
         <div id="QC">
             <h1 class="mayusFont title">¿Qué_comer?</h1>
@@ -36,10 +55,10 @@ type="text/javascript" charset="utf-8"></script>
         </div>
     </section>
     
-    <section class="contenedorImage">
+    <section class="contenedorImage" id="febo">
         <h3 class="titleSection mayusFont colorOrange">FEBO</h3>
         <div class="wrapperPadding5">
-            <h4 class="mayusFont description">Servicios:</h4>
+            <h4 class="mayusFont description">Comida rápida:</h4>
             <div class="rectangle">
                 <div class="square">
                     <div title="kaassouffle" class="empty-circle" id="kaassouffleBackground">
@@ -72,11 +91,26 @@ type="text/javascript" charset="utf-8"></script>
             <div class="rectangle big-rectangle right">
                 <div class="blackBackground">
                     <h4 class="mayusFont">La mejor tarta de manzana casera de Ámsterdam</h4>
-                    <div class="responsive-columns">
+                    <article class="responsive-columns">
                         <p>On the corner of the Brewer’s Canal, is one of the oldest café’s in Amsterdam: café ‘Papeneiland’, established in 1641. In the 17th century, “Paap” was a common swearword for Catholics. ‘Papeneiland’ was a catholic café and it stood on a little island just outside the city.</p>
                         <p>A secret tunnel was dug in the 17th century from the Posthorn church, under the canal, to the basement of the café. Through that tunnel, the Catholics could flee the city if there was trouble. If you ask the barman of that café nicely, he’ll take you to the basement and show you the entrance of that tunnel, which is still there. If you look back at the café from the other side of the bridge, you see that the building has two front gables, one stepgable on each canal. As opposed to the house on the other corner, which has one front and one side gable. That meant that the owner of the café had to pay double taxes, because they only had to pay for front footage with a hoisting hook. Recently, Papeneiland made a claim to fame because American  ex-president Clinton spent some hours in the cafe during his visit to Holland in May 2011. He enjoyed some of the famous home-made apple pie there.</p>
-                    </div>
+                    </article>
                 </div>
+            </div>
+    </section>
+    <section class="contenedorImage" id="kroket">
+        <h3 class="titleSection mayusFont colorWhite">Eetsalon Van Dobben</h3>
+            
+            <div class="wrapperPadding5 rectangle big-rectangle left">
+                <div class="blackBackground">
+                    <h4 class="mayusFont">La mejor tarta de manzana casera de Ámsterdam</h4>
+                    <article class="responsive-columns">
+                        <p>The Netherlands is among that select group of nations with a thing for the breaded, deep-fried, creamy balls we call croquettes (thanks to the French). Of course, not all croquettes are created equal. The Dutch kroket is typically cylindrical in shape, filled with a meat ragout (most commonly using beef, beef broth, flour, butter or margarine, onions, herbs) and epitomizing textural contrast: very crispy and crunchy on the outside, super soft and smooth inside, with chunks or strands of meat. In Amsterdam, kroketten have long been an economical way of using leftover meat stews and roasts—mixed with gravy, rolled into logs, breaded, and fried—but the snack really took off during WWII, when they became mass-produced as a cheap foodstuff. Since then the kroket has been regarded mostly as a fast-food delicacy, a common item at the vending-machine-style automats around town, where a popular game is wondering what the heck they’re really made of. We say: Don’t overthink it. It’s delicious served the Dutch way, with mustard and (optional) white bread.</p>
+                    </article>
+                </div>
+            </div>
+        <div class="rectangle">
+                <div title="croquetas ricas" id="kroket-box"></div>
             </div>
     </section>
 </body>
