@@ -155,7 +155,7 @@ h4.white{
 /*BEGIN Section*/
 .contenedorImage{
     display: inline-block;
-    background-size:auto;
+    background-size:cover;
     background-repeat: no-repeat;
     height: auto;
     background-position: center;
