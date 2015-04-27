@@ -1,30 +1,107 @@
 #fondoTransporte{
-        background-image: url(http://www.landscape-photo.net/albums/userpics/10001/Amsterdam_-03.jpg);
+    background-image: url(http://www.landscape-photo.net/albums/userpics/10001/Amsterdam_-03.jpg);
+}
+/*---------------------------------------------------------*/  
+#transporte2{
+    background-image: url(../recursos/transporteFondo2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;        
+}
+
+.rectangle{
+    width: 100%;
+    padding-bottom: 9%;
+    margin-right: 3%;
+    float: none;
+}
+
+@media (min-width: 400px){
+    .square{    
+        box-sizing: content-box;
+        padding: 3%;
+        width: 17%;
+        display: inline-block;
     }
 
-    #transporte2{
-        background-image: url(../recursos/transporteFondo2.jpg);
-        background-repeat: no-repeat;
-        background-size:cover; 
-        
+    .show-hover-and-movile{
+        display: none;
+    }
+    .circle {
+        padding: 27%;
+        border-radius: 50%;
+        color: white;
+    }
+    .circle:hover{
+        background: red;
+        /*width: 20%;
+        border-radius: 4%;
+        position: absolute;
+        padding: 3%;
+        margin-top: -6.5%;
+        margin-left: -2%;*/
     }
 
-    #historia3{
-        background-image: url(../recursos/fondoh3.jpg);
-        background-repeat: no-repeat;
-        background-size:cover; 
-        
+    .circle:hover>.show-hover-and-movile{
+        display: block;
+        /*background-color: red;
+        margin-left: -0.2rem;
+        font-size: 1.2vw;
+        font-weight: bold;
+        margin-left: -0.2rem;
+        text-align: justify;*/
     }
 
-    #historia4{
-        background-image: url(../recursos/fondoh4.jpg);
-        background-repeat: no-repeat;
-        background-size:cover; 
-        
+    /*.circle:hover > .icon{
+        display: none;
+    }*/
+}
+
+@media (min-width: 900px){
+    .rectangle{
+        padding-top: 5%;
+        float: left;
+        width: 35%;
     }
-    #historia5{
-        background-image: url(../recursos/fondoh5.jpg);
-        background-repeat: no-repeat;
-        background-size:cover; 
-        
+    .square{
+        width: 35%;
+    }/*
+    .circle:hover{
+        padding: 0.5%;
     }
+    .circle:hover[id="priceText"]{
+        margin-left: -6.5rem;
+        margin-top: -3rem;
+    }
+    .circle:hover[id="wifiText"]{
+        margin-left: -0.5rem;
+        margin-top: -3.5rem;
+    }
+    .circle:hover[id="audioGuideText"]{
+        margin-left: -6.5rem;
+        margin-top: -5.5rem;
+    }
+    .circle:hover[id="appText"]{
+        margin-left: -0.5rem;
+        margin-top: -5.5rem;
+    }*/
+}
+/*---------------------------------------------------------*/
+#historia3{
+    background-image: url(../recursos/fondoh3.jpg);
+    background-repeat: no-repeat;
+    background-size:cover; 
+
+}
+
+#historia4{
+    background-image: url(../recursos/fondoh4.jpg);
+    background-repeat: no-repeat;
+    background-size:cover; 
+
+}
+#historia5{
+    background-image: url(../recursos/fondoh5.jpg);
+    background-repeat: no-repeat;
+    background-size:cover; 
+
+}

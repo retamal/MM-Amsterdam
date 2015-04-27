@@ -16,9 +16,6 @@ body{
     display: inline-block;
 }
 
-.hover{
-    display: none;
-}
 /**/
 .colorAppleGreen{
     color: rgba(52, 235, 80, 0.9);
@@ -42,7 +39,7 @@ body{
 }
 .colorWhite{
     color: rgba(255, 255, 255, 0.9);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9); 
+    text-shadow: 1px 1px 10px rgb(0, 0, 0); 
     
 }
 .blackBackground{
@@ -323,24 +320,11 @@ h3.titleSection{
 /*END Slider*/
 
 /*BEGIN Circles*/
-.rectangle{
-    width: 100%;
-    padding-bottom: 9%;
-    margin-right: 3%;
-}
 
-.square{    
-    box-sizing: content-box;
-    padding: 3%; 
-    display: inline-block;
-    width: 17%;
-}
 
-.circle {
-    padding: 27%;
-    border-radius: 50%;
-    color: white;
-}
+
+
+
 
 .empty-circle {
     padding: 50%;
@@ -369,26 +353,7 @@ h3.titleSection{
 .app:before{
     content: "\f10b";
 }
-.circle:hover > .hover{
-    display: inline-block;
-    font-size: 1.2vw;
-    font-weight: bold;
-    margin-left: -0.2rem;
-    text-align: justify;
-}
 
-.circle:hover > .icon{
-    display: none;
-}
-
-.circle:hover{
-    width: 20%;
-    border-radius: 4%;
-    position: absolute;
-    padding: 3%;
-    margin-top: -6.5%;
-    margin-left: -2%;
-}
 
 div p{
     margin-left: 10%;
@@ -564,24 +529,13 @@ div p{
         column-rule: 0.5rem solid rgb(75, 180, 149);
     }
     /*canal bus*/
-    .rectangle{
-        float: none;
+
+
+    .hover{
+        display: none;
     }
     #slider-arrows{
         padding-bottom: 30%;
-    }
-    
-    .circle:hover > .hover{
-    margin-left: -0.2rem;
-}
-
-    .circle:hover{
-        width: 20%;
-        border-radius: 4%;
-        position: absolute;
-        padding: 3%;
-        margin-top: -6.5%;
-        margin-left: -2%;
     }
 }
 
@@ -608,40 +562,15 @@ div p{
         margin-top: -20%;
         margin-left: 2%;
     }
-    .rectangle{
-        padding-top: 5%;
-        float: left;
-        width: 35%;
-    }
+    
     
     .big-rectangle{
         width: 55%;     
     }
-    .square{
-        width: 35%;
-    }
+
     
     div p{
         margin-left: 0;
-    }
-    .circle:hover{
-        padding: 0.5%;
-    }
-    .circle:hover[id="priceText"]{
-        margin-left: -6.5rem;
-        margin-top: -3rem;
-    }
-    .circle:hover[id="wifiText"]{
-        margin-left: -0.5rem;
-        margin-top: -3.5rem;
-    }
-    .circle:hover[id="audioGuideText"]{
-        margin-left: -6.5rem;
-        margin-top: -5.5rem;
-    }
-    .circle:hover[id="appText"]{
-        margin-left: -0.5rem;
-        margin-top: -5.5rem;
     }
 }
 
