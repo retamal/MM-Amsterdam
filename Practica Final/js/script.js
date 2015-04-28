@@ -24,3 +24,8 @@ $(function(){
    });
 
 });
+
+
+function enviar(){
+    alert("Mensaje enviado correctamente.");
+}

@@ -278,14 +278,14 @@ La Corona Imperial de Austria fue obsequiada a la ciudad en el año 1489 por Max
                     </div>
                     <div class="restoSeccion">
                         <div id="contenedorPostal">
-                            <form>
+                            <form action="">
                                 <label class="aspectoLabel" for="destinatario">Destinatario</label>
                                 <input title="destinatario" type="text" id="destinatario" name="destinatario" class="entradaPosta" placeholder="Destinatario"/>
                                 <label class="aspectoLabel" for="asunto">Asunto</label>
                                 <input type="text" id="asunto" name="asunto" class="entradaPosta alinear" placeholder="Asunto" />
                                 <label class="aspectoLabel" for="textoform" >Texto</label>
                                  <textarea class="textoPostal" rows="4" cols="50" name="texto" placeholder=" Cuerpo del mensaje" id="textoform" ></textarea> 
-                    <input type="submit" id="botonFormula" value="Enviar" name="botonFormula" class="botonPostal"/>
+                    <input type="submit" id="botonFormula" value="Enviar" name="botonFormula" onClick="enviar()" class="botonPostal"/>
                             </form>
                         </div>
                     </div>  
