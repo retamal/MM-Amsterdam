@@ -114,28 +114,28 @@ article h4{
     }
 }
 /*------------------------------------------------------*/
-#comida2{
-    background-image: url(../recursos/fondoComida2.jpg);
+#atractivos2{
+    background-image: url(../recursos/fondoAtractivos2.jpg);
     background-repeat: no-repeat;
     background-size:cover; 
 }
 
-#poffertjesBackground{
-    background-image: url(../recursos/comida2poffertjes.jpg);
+#coffeeshopsBackground{
+    background-image: url(../recursos/atractivos2porro.jpg);
     background-position: center;
     background-size: cover;
 }
-#appleTartBackground{
-    background-image: url(../recursos/comida2applepie.jpg);
-    background-position: center;
-    background-size: cover;
-}
-#hagelslagBackground{
-    background-image: url(../recursos/comida2hagelslag.jpg);
+#barriorojoBackground{
+    background-image: url(../recursos/atractivos2barriorojo.jpg);
     background-position: center;
     background-size: cover;
 }
 
+#windmillbreweryBackground{
+    background-image: url(../recursos/atractivos2windmill.jpg);
+    background-position: center;
+    background-size: cover;
+}
 .rectanglec2{
     width: 100%;
     float: none;
@@ -157,16 +157,16 @@ article h4{
         position: absolute;
         width: 28%;
         border-radius: 50%;
-        padding: 3% 3%;
+        padding: 2.5% 2.5%;
     }
     
-    .rectanglec2:hover[id="poffertjes"] .show-hover-and-movilec2{
+    .rectanglec2:hover[id="coffeeshops"] .show-hover-and-movilec2{
         display: block;
     }
-    .rectanglec2:hover[id="appleTart"] .show-hover-and-movilec2{
+    .rectanglec2:hover[id="barriorojo"] .show-hover-and-movilec2{
         display: block;
     }
-    .rectanglec2:hover[id="hagelslag"] .show-hover-and-movilec2{
+    .rectanglec2:hover[id="windmillbrewery"] .show-hover-and-movilec2{
         display: block;
     }
 }
