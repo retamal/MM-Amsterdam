@@ -412,6 +412,9 @@ article p{
     article p{
         font-size: 1vw;
     }
+    .big-font-size p{
+        font-size: 1vw;
+    }
 }
 /*--------------------------------------------------*/
 

@@ -125,11 +125,81 @@ article h4{
     background-position: center;
     background-size: cover;
 }
-
 #appleTartBackground{
     background-image: url(../recursos/comida2applepie.jpg);
     background-position: center;
     background-size: cover;
+}
+#hagelslagBackground{
+    background-image: url(../recursos/comida2hagelslag.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*edited*/.rectanglec2{
+    width: 100%;
+    float: none;
+    display: inline-block;
+    padding-top: 3%;
+}
+.squarec2{
+    float: left;
+    width: 30%;
+    padding-right: 3%
+}
+.rectangleRc2{
+    padding: 3%;
+    float: left;
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (min-width: 400px){
+    .wrapper80{
+        width: 90%;
+        display: inline-block;
+    }
+    /*edited*/.rectanglec2{
+        float: left;
+        width: 33%;
+        padding: 1%;
+    }
+    .squarec2{    
+        box-sizing: content-box;
+        width: 100%;
+        display: inline-block;
+    }
+    .show-hover-and-movilec2{
+        display: none;
+        position: absolute;
+        width: 23%;
+        border-radius: 50%;
+        padding: 1% 1%;
+    }
+    
+    .rectanglec2:hover[id="poffertjes"] .show-hover-and-movilec2{
+        display: block;
+    }
+    .rectanglec2:hover[id="appleTart"] .show-hover-and-movilec2{
+        display: block;
+    }
+    .rectanglec2:hover[id="hagelslag"] .show-hover-and-movilec2{
+        display: block;
+    }
+}
+@media (min-width: 900px){
+    .show-hover-and-movilec2{
+        display: block;
+        width: 16.75%;
+        border-radius: 0;
+        margin-top: 17.5vw;
+        padding: 1% 2%;
+    }
+    .rectanglec2{
+        width: 25%;
+        padding-top: 0.5%;
+    }
 }
 /*------------------------------------------------------*/
 #historia4{
