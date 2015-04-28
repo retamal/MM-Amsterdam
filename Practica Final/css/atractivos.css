@@ -162,13 +162,14 @@ article h4{
         float: left;
         width: 33%;
         padding: 1%;
+        margin-top: 5vw;
     }
     /*edit*/.show-hover-and-movilec2{
         display: none;
         position: absolute;
         width: 28%;
         border-radius: 50%;
-        padding: 2.5% 2.5%;
+        padding: 2.5% 2%;
     }
     
     .rectanglec2:hover[id="coffeeshops"] .show-hover-and-movilec2{
@@ -178,6 +179,15 @@ article h4{
         display: block;
     }
     .rectanglec2:hover[id="windmillbrewery"] .show-hover-and-movilec2{
+        display: block;
+    }
+    .rectanglec2:hover[id="plazadam"] .show-hover-and-movilec2{
+        display: block;
+    }
+    .rectanglec2:hover[id="canales"] .show-hover-and-movilec2{
+        display: block;
+    }
+    .rectanglec2:hover[id="mercadoflores"] .show-hover-and-movilec2{
         display: block;
     }
 }
@@ -221,13 +231,13 @@ article h4{
 /*------------------------------------------------------*/
 /*RETOQUE*/
 
-#comida1 .tituloCabecera{
+#atractivos1 .tituloCabecera{
     color:white;
 }
-#comida2 .tituloCabecera{
+#atractivos2 .tituloCabecera{
     color:white;
 }
-#comida3 .tituloCabecera{
+#atractivos3 .tituloCabecera{
     color:white;
 }
 
@@ -243,44 +253,26 @@ body{
     min-height: 800px;
 }
 
-@media (max-width: 1220px){
-    #comida1{
-        height: 600px;
-        min-height: 500px;
-    }
-}
 
 @media (max-width: 900px){
-    #comida1{
-        height: 900px;
-        
-    }
-    
-    #comida2{
+    #atractivos2,
+    #atractivos3{
         height: 600px;
         
     }
 }
 
 @media (max-width: 500px){
-    #comida1{
-        height: 400px;
-        
-    }
-    
-    #comida2{
+    #atractivos2,
+    #atractivos3{
         height: 300px;
         
     }
 }
 
-@media (max-width: 400px){
-    #comida1{
-        height: 600px;
-        
-    }
-    
-    #comida2{
+@media (max-width: 400px){    
+    #atractivos2,
+    #atractivos3{
         height: 600px;
         
     }
