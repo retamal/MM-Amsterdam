@@ -142,21 +142,8 @@ article h4{
     display: inline-block;
     padding-top: 3%;
 }
-.squarec2{
-    float: left;
-    width: 30%;
-    padding-right: 3%
-}
-.rectangleRc2{
-    padding: 3%;
-    float: left;
-    width: 70%;
-    display: inline-block;
-    vertical-align: middle;
-}
-
 @media (min-width: 400px){
-    .wrapper80{
+    .wrapper90{
         width: 90%;
         display: inline-block;
     }
@@ -165,17 +152,12 @@ article h4{
         width: 33%;
         padding: 1%;
     }
-    .squarec2{    
-        box-sizing: content-box;
-        width: 100%;
-        display: inline-block;
-    }
-    .show-hover-and-movilec2{
+    /*edit*/.show-hover-and-movilec2{
         display: none;
         position: absolute;
-        width: 23%;
+        width: 28%;
         border-radius: 50%;
-        padding: 1% 1%;
+        padding: 3% 3%;
     }
     
     .rectanglec2:hover[id="poffertjes"] .show-hover-and-movilec2{
@@ -191,14 +173,16 @@ article h4{
 @media (min-width: 900px){
     .show-hover-and-movilec2{
         display: block;
-        width: 16.75%;
+        width: 27%;
         border-radius: 0;
-        margin-top: 17.5vw;
-        padding: 1% 2%;
+        margin-top: 22vw;
+        margin-left: -3vw;
+        padding: 0.5% 2%;
     }
     .rectanglec2{
-        width: 25%;
-        padding-top: 0.5%;
+        width: 33%;
+        padding: 5%;
+        margin-top: -3vw;
     }
 }
 /*------------------------------------------------------*/
