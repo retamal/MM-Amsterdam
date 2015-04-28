@@ -18,7 +18,6 @@ article h4{
     background-size:cover;
 }
 
-/*Circles*/
 #kaassouffleBackground{
     background-image: url(../recursos/power-ranking-the-febo-automat-s-wall-of-food.jpg);
     background-position: center;
@@ -49,7 +48,7 @@ article h4{
 .square{
     float: left;
     width: 30%;
-    padding-right: 3%
+    padding-right: 3%;
 }
 .empty-circle {
     padding: 50%;
@@ -59,7 +58,7 @@ article h4{
     padding: 3%;
     float: left;
     width: 70%;
-    display: inline-block;
+    display: block;
     vertical-align: middle;
 }
 
@@ -113,13 +112,13 @@ article h4{
         padding-top: 0.5%;
     }
 }
-/*end: Circles*/
 /*------------------------------------------------------*/
 #comida2{
     background-image: url(../recursos/fondoComida2.jpg);
     background-repeat: no-repeat;
     background-size:cover; 
 }
+
 #poffertjesBackground{
     background-image: url(../recursos/comida2poffertjes.jpg);
     background-position: center;
@@ -136,7 +135,7 @@ article h4{
     background-size: cover;
 }
 
-/*edited*/.rectanglec2{
+.rectanglec2{
     width: 100%;
     float: none;
     display: inline-block;
@@ -180,22 +179,97 @@ article h4{
         padding: 0.5% 2%;
     }
     .rectanglec2{
-        width: 33%;
         padding: 5%;
         margin-top: -3vw;
     }
 }
 /*------------------------------------------------------*/
-#historia4{
-    background-image: url(../recursos/fondoh4.jpg);
+#comida3{
+    background-image: url(../recursos/fondoComida3.jpg);
     background-repeat: no-repeat;
     background-size:cover; 
 }
 
-/*------------------------------------------------------*/
-#historia5{
-    background-image: url(../recursos/fondoh5.jpg);
-    background-repeat: no-repeat;
-    background-size:cover; 
+#maasdammerBackground{
+    background-image: url(../recursos/comida3maasdammer.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#boerenkaasBackground{
+    background-image: url(../recursos/comida3boerenkaas.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#quesocabraBackground{
+    background-image: url(../recursos/comida3quesocabra.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#quesoahumadoBackground{
+    background-image: url(../recursos/comida3quesoahumado.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#quesofrisonalclavoBackground{
+    background-image: url(../recursos/comida3quesocomino.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
+.rectanglec3{
+    width: 100%;
+    float: none;
+    display: inline-block;
+    padding-top: 3%;
+}
+@media (min-width: 400px){
+    .rectanglec3{
+        float: left;
+        width: 33%;
+        padding: 1%;
+        display: inline-block;
+    }
+    .show-hover-and-movilec3{
+        display: none;
+        position: absolute;
+        width: 28%;
+        border-radius: 50%;
+    }
+    
+    .rectanglec3:hover[id="maasdammer"] .show-hover-and-movilec3{
+        display: block;
+        padding: 5.5% 6%;
+    }
+    .rectanglec3:hover[id="boerenkaas"] .show-hover-and-movilec3{
+        display: block;
+        padding: 6.6% 4%;
+    }
+    .rectanglec3:hover[id="quesocabra"] .show-hover-and-movilec3{
+        display: block;
+        padding: 5.41% 3%;
+    }
+    .rectanglec3:hover[id="quesoahumado"] .show-hover-and-movilec3{
+        display: block;
+        padding: 4.3% 4%;
+    }
+    .rectanglec3:hover[id="quesofrisonalclavo"] .show-hover-and-movilec3{
+        display: block;
+        padding: 4.4% 4%;
+    }
+}
+@media (min-width: 900px){
+    .rectanglec3:hover  .show-hover-and-movilec3{        
+        padding: 0.5% 2% !important;
+    }
+    .show-hover-and-movilec3{
+        display: block;
+        width: 16%;
+        border-radius: 0;
+        margin-top: 18vw;      
+        padding: 0.5% 2%;
+    }
+    .rectanglec3{
+        width: 20%;
+        padding: 1%;
+    }
 }
