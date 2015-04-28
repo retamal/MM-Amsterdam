@@ -318,3 +318,72 @@ fur-columns{
     background-size:cover; 
 
 }
+
+/*DETALLITOS*/
+
+#transporte4{
+    background-image: url(../recursos/fondoBus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#transporte3{
+    background-color: white;
+}
+
+#transporte1{
+    background-color: white;
+}
+
+#transporte4col1{
+    background-color: rgba(255, 255, 255, 0.78);
+    border-top: 4px solid orange;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.73);
+    padding: 4px;
+}
+
+#transporte4col2{
+    background-color: rgba(0, 0, 0, 0.76);
+    color: #e0e0e0;
+        padding: 4px;
+
+}
+
+#transporte4col3{
+    background-color: rgba(255, 255, 255, 0.78);  
+        padding: 4px;
+
+}
+#transporte4col4{
+    background-color: rgba(0, 0, 0, 0.76);
+    color: #e0e0e0;
+    border-bottom: 4px solid orange;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.73);
+        padding: 4px;
+
+}
+
+#transporte4 .tituloCabecera{
+    color:white;
+    
+}
+
+#tramArticle a{
+    color:orange;
+    font-weight: bold;
+}
+.show-pc a:visited{
+    color:orange;
+}
+.show-pc a:link{
+    color:orange;
+}
+.show-pc a:active{
+    color:orange;
+}
+..show-pc a:hover
+    color:orange;
+}
+
+/*colores de los circulos*/
+
