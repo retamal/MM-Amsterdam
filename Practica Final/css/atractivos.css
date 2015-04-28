@@ -186,90 +186,86 @@ article h4{
 }
 /*------------------------------------------------------*/
 #atractivos1{
-    background-image: url(../recursos/fondoComida3.jpg);
+    background-image: url(../recursos/fondoAtractivos1.jpg);
     background-repeat: no-repeat;
     background-size:cover; 
 }
 
-#maasdammerBackground{
-    background-image: url(../recursos/comida3maasdammer.jpg);
+#rijksmuseumBackground{
+    background-image: url(../recursos/atractivos1rijksmuseum.jpg);
     background-position: center;
     background-size: cover;
 }
-#boerenkaasBackground{
-    background-image: url(../recursos/comida3boerenkaas.jpg);
+#rembrandtBackground{
+    background-image: url(../recursos/atractivos1casarembrandtmuseum.jpg);
     background-position: center;
     background-size: cover;
 }
-#quesocabraBackground{
-    background-image: url(../recursos/comida3quesocabra.jpg);
+#anafrankBackground{
+    background-image: url(../recursos/atractivos1casaanafrank.JPG);
     background-position: center;
     background-size: cover;
 }
-#quesoahumadoBackground{
-    background-image: url(../recursos/comida3quesoahumado.jpg);
+#vangoghBackground{
+    background-image: url(../recursos/atractivos1vangoghmuseum.jpg);
     background-position: center;
     background-size: cover;
 }
-#quesofrisonalclavoBackground{
-    background-image: url(../recursos/comida3quesocomino.jpg);
+#nemoBackground{
+    background-image: url(../recursos/atractivos1nemomuseum.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.rectanglec3{
+.rectangle{
     width: 100%;
     float: none;
     display: inline-block;
     padding-top: 3%;
 }
 @media (min-width: 400px){
-    .rectanglec3{
+    .rectangle{
         float: left;
         width: 33%;
         padding: 1%;
         display: inline-block;
     }
-    .show-hover-and-movilec3{
+    .show-hover-and-movile{
         display: none;
         position: absolute;
-        width: 28%;
+        width: 31%;
         border-radius: 50%;
+        padding: 4% 4%;
     }
     
-    .rectanglec3:hover[id="maasdammer"] .show-hover-and-movilec3{
+    .rectangle:hover[id="rijksmuseum"] .show-hover-and-movile{
         display: block;
-        padding: 5.5% 6%;
     }
-    .rectanglec3:hover[id="boerenkaas"] .show-hover-and-movilec3{
+    .rectangle:hover[id="rembrandt"] .show-hover-and-movile{
         display: block;
-        padding: 6.6% 4%;
     }
-    .rectanglec3:hover[id="quesocabra"] .show-hover-and-movilec3{
+    .rectangle:hover[id="anafrank"] .show-hover-and-movile{
         display: block;
-        padding: 5.41% 3%;
     }
-    .rectanglec3:hover[id="quesoahumado"] .show-hover-and-movilec3{
+    .rectangle:hover[id="vangogh"] .show-hover-and-movile{
         display: block;
-        padding: 4.3% 4%;
     }
-    .rectanglec3:hover[id="quesofrisonalclavo"] .show-hover-and-movilec3{
+    .rectangle:hover[id="nemo"] .show-hover-and-movile{
         display: block;
-        padding: 4.4% 4%;
     }
 }
 @media (min-width: 900px){
-    .rectanglec3:hover  .show-hover-and-movilec3{        
+    .rectangle:hover  .show-hover-and-movile{        
         padding: 0.5% 2% !important;
     }
-    .show-hover-and-movilec3{
+    .show-hover-and-movile{
         display: block;
-        width: 16%;
+        width: 18.5%;
         border-radius: 0;
-        margin-top: 18vw;      
+        margin-top: 18.5vw;      
         padding: 0.5% 2%;
     }
-    .rectanglec3{
+    .rectangle{
         width: 20%;
         padding: 1%;
     }
@@ -340,7 +336,7 @@ body{
         height: 600px;
         
     }
-    #comida3{
+    #atractivos1{
         height: 700px;
         
     }
