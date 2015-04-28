@@ -27,9 +27,7 @@
     display: none;
 }
 
-.big-font-size p{
-    font-size: 2vw;
-}
+
 
 /*Slider*/
 input[name="slider-select-element"]{

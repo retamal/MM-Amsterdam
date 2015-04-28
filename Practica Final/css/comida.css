@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box; /* el navegador interpreta el width/hight % incluyendo padding */
+}
+
+article h4{
+    padding-bottom: 5%;
+}
 #fondoComida{
     background-image: url(../recursos/fondoComida.jpg);
 }
@@ -8,12 +18,102 @@
     background-size:cover;
 }
 
+/*Circles*/
+#kaassouffleBackground{
+    background-image: url(../recursos/power-ranking-the-febo-automat-s-wall-of-food.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#kalfskroketBackground{
+    background-image: url(../recursos/kalfskroket.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#kipburgerBackground{
+    background-image: url(../recursos/kipburguer.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#bamiBackground{
+    background-image: url(../recursos/bami.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.rectangle{
+    width: 100%;
+    float: none;
+    display: inline-block;
+    padding-top: 3%;
+}
+.square{
+    float: left;
+    width: 30%;
+    padding-right: 3%
+}
 .empty-circle {
     padding: 50%;
     border-radius: 50%;
-    color: white;
+}
+.rectangleR{
+    padding: 3%;
+    float: left;
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
+@media (min-width: 400px){   
+    
+    .wrapper80{
+        width: 80%;
+        display: inline-block;
+    }
+    .rectangle{
+        float: left;
+        width: 50%;
+        padding: 2%;
+    }
+    .square{    
+        box-sizing: content-box;
+        width: 100%;
+        display: inline-block;
+    }
+    .show-hover-and-movile{
+        display: none;
+        position: absolute;
+        width: 37%;
+        border-radius: 50%;
+        padding: 5% 6%;
+    }
+    
+    .rectangle:hover[id="kaassouffle"] .show-hover-and-movile{
+        display: block;
+    }
+    .rectangle:hover[id="kalfskroket"] .show-hover-and-movile{
+        display: block;
+    }
+    .rectangle:hover[id="kipburger"] .show-hover-and-movile{
+        display: block;
+    }
+    .rectangle:hover[id="bami"] .show-hover-and-movile{
+        display: block;
+    }
+}
+@media (min-width: 900px){
+    .show-hover-and-movile{
+        display: block;
+        width: 16.75%;
+        border-radius: 0;
+        margin-top: 17.5vw;
+        padding: 1% 2%;
+    }
+    .rectangle{
+        width: 25%;
+        padding-top: 0.5%;
+    }
+}
+/*end: Circles*/
 /*------------------------------------------------------*/
 #historia2{
     background-image: url(../recursos/fondoh3.jpg);
