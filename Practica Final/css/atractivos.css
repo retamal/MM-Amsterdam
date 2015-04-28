@@ -12,29 +12,34 @@ article h4{
     background-image: url(../recursos/fondoAtractivos.jpg);
 }
 /*---------------------------------------------------------*/  
-#comida1{
-    background-image: url(../recursos/fondoComida1.JPG);
+#atractivos1{
+    background-image: url(../recursos/fondoAtractivos1.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:cover; 
 }
 
-#kaassouffleBackground{
-    background-image: url(../recursos/power-ranking-the-febo-automat-s-wall-of-food.jpg);
+#rijksmuseumBackground{
+    background-image: url(../recursos/atractivos1rijksmuseum.jpg);
     background-position: center;
     background-size: cover;
 }
-#kalfskroketBackground{
-    background-image: url(../recursos/kalfskroket.jpg);
+#rembrandtBackground{
+    background-image: url(../recursos/atractivos1casarembrandtmuseum.jpg);
     background-position: center;
     background-size: cover;
 }
-#kipburgerBackground{
-    background-image: url(../recursos/kipburguer.jpg);
+#anafrankBackground{
+    background-image: url(../recursos/atractivos1casaanafrank.JPG);
     background-position: center;
     background-size: cover;
 }
-#bamiBackground{
-    background-image: url(../recursos/bami.jpg);
+#vangoghBackground{
+    background-image: url(../recursos/atractivos1vangoghmuseum.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#nemoBackground{
+    background-image: url(../recursos/atractivos1nemomuseum.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -63,16 +68,16 @@ article h4{
     vertical-align: middle;
 }
 
-@media (min-width: 400px){   
-    
+@media (min-width: 400px){
     .wrapper80{
         width: 80%;
         display: inline-block;
     }
     .rectangle{
         float: left;
-        width: 50%;
-        padding: 2%;
+        width: 33%;
+        padding: 1%;
+        display: inline-block;
     }
     .square{    
         box-sizing: content-box;
@@ -82,35 +87,41 @@ article h4{
     .show-hover-and-movile{
         display: none;
         position: absolute;
-        width: 37%;
+        width: 31%;
         border-radius: 50%;
-        padding: 6.49% 6.3%;
+        padding: 4% 4%;
     }
     
-    .rectangle:hover[id="kaassouffle"] .show-hover-and-movile{
+    .rectangle:hover[id="rijksmuseum"] .show-hover-and-movile{
         display: block;
     }
-    .rectangle:hover[id="kalfskroket"] .show-hover-and-movile{
+    .rectangle:hover[id="rembrandt"] .show-hover-and-movile{
         display: block;
     }
-    .rectangle:hover[id="kipburger"] .show-hover-and-movile{
+    .rectangle:hover[id="anafrank"] .show-hover-and-movile{
         display: block;
     }
-    .rectangle:hover[id="bami"] .show-hover-and-movile{
+    .rectangle:hover[id="vangogh"] .show-hover-and-movile{
+        display: block;
+    }
+    .rectangle:hover[id="nemo"] .show-hover-and-movile{
         display: block;
     }
 }
 @media (min-width: 900px){
+    .rectangle:hover  .show-hover-and-movile{        
+        padding: 0.5% 2% !important;
+    }
     .show-hover-and-movile{
         display: block;
-        width: 16.75%;
+        width: 18.5%;
         border-radius: 0;
-        margin-top: 17.5vw;
-        padding: 1% 2%;
+        margin-top: 18.5vw;      
+        padding: 0.5% 2%;
     }
     .rectangle{
-        width: 25%;
-        padding-top: 0.5%;
+        width: 20%;
+        padding: 1%;
     }
 }
 /*------------------------------------------------------*/
@@ -185,92 +196,29 @@ article h4{
     }
 }
 /*------------------------------------------------------*/
-#atractivos1{
-    background-image: url(../recursos/fondoAtractivos1.jpg);
+#atractivos3{
+    background-image: url(../recursos/fondoAtractivos3.jpg);
     background-repeat: no-repeat;
     background-size:cover; 
 }
 
-#rijksmuseumBackground{
-    background-image: url(../recursos/atractivos1rijksmuseum.jpg);
+#plazadamBackground{
+    background-image: url(../recursos/atractivos3plazadam.jpg);
     background-position: center;
     background-size: cover;
 }
-#rembrandtBackground{
-    background-image: url(../recursos/atractivos1casarembrandtmuseum.jpg);
-    background-position: center;
-    background-size: cover;
-}
-#anafrankBackground{
-    background-image: url(../recursos/atractivos1casaanafrank.JPG);
-    background-position: center;
-    background-size: cover;
-}
-#vangoghBackground{
-    background-image: url(../recursos/atractivos1vangoghmuseum.jpg);
-    background-position: center;
-    background-size: cover;
-}
-#nemoBackground{
-    background-image: url(../recursos/atractivos1nemomuseum.jpg);
+#canalesBackground{
+    background-image: url(../recursos/atractivos3canal.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.rectangle{
-    width: 100%;
-    float: none;
-    display: inline-block;
-    padding-top: 3%;
+#mercadofloresBackground{
+    background-image: url(../recursos/atractivos3mercadodelasfloresflotante.jpg);
+    background-position: center;
+    background-size: cover;
 }
-@media (min-width: 400px){
-    .rectangle{
-        float: left;
-        width: 33%;
-        padding: 1%;
-        display: inline-block;
-    }
-    .show-hover-and-movile{
-        display: none;
-        position: absolute;
-        width: 31%;
-        border-radius: 50%;
-        padding: 4% 4%;
-    }
-    
-    .rectangle:hover[id="rijksmuseum"] .show-hover-and-movile{
-        display: block;
-    }
-    .rectangle:hover[id="rembrandt"] .show-hover-and-movile{
-        display: block;
-    }
-    .rectangle:hover[id="anafrank"] .show-hover-and-movile{
-        display: block;
-    }
-    .rectangle:hover[id="vangogh"] .show-hover-and-movile{
-        display: block;
-    }
-    .rectangle:hover[id="nemo"] .show-hover-and-movile{
-        display: block;
-    }
-}
-@media (min-width: 900px){
-    .rectangle:hover  .show-hover-and-movile{        
-        padding: 0.5% 2% !important;
-    }
-    .show-hover-and-movile{
-        display: block;
-        width: 18.5%;
-        border-radius: 0;
-        margin-top: 18.5vw;      
-        padding: 0.5% 2%;
-    }
-    .rectangle{
-        width: 20%;
-        padding: 1%;
-    }
-}
-
+/*------------------------------------------------------*/
 /*RETOQUE*/
 
 #comida1 .tituloCabecera{
