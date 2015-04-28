@@ -1,24 +1,142 @@
 #fondoTransporte{
-    background-image: url(http://www.landscape-photo.net/albums/userpics/10001/Amsterdam_-03.jpg);
+    background-image: url(../recursos/fondoTransporte.jpg);
 }
 /*---------------------------------------------------------*/  
 #transporte2{
     background-image: url(../recursos/transporteFondo2.jpg);
     background-repeat: no-repeat;
-    background-size:cover;        
+    background-size:cover;
+    /*height: 200%; /*EHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH HACER ALGO*/
 }
-
+/*Circles*/
 .rectangle{
     width: 100%;
     padding-bottom: 9%;
     margin-right: 3%;
     float: none;
 }
+.square{
+    padding: 3%;
+}
+
+.circle{
+    border-radius: 10%;
+}
+
+.icon{
+    display: none;
+}
+
+.big-font-size p{
+    font-size: 2vw;
+}
+
+/*Slider*/
+input[name="slider-select-element"]{
+    display: none;
+}
+
+/* como hay overflow en el slider-container se colocan
+los elementos uno detrás de otro hacia la derecha.
+con checked decimos que cuando está seleccionado
+según qué input se desplace el margen x% para mostrar
+un elemento u otro */
+#elementRed:checked ~ #slider-container #slider-box {
+    margin-left: 0;
+}
+
+#elementGreen:checked ~ #slider-container #slider-box {
+    margin-left: -100%;
+}
+
+#elementOrange:checked ~ #slider-container #slider-box {
+    margin-left: -200%;
+}
+
+#slider-container{
+    width: 95%;
+    overflow: hidden;
+    margin-left: 2%
+}
+
+#slider-box{
+    width: 300%;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}
+
+.slider-element{
+    float: left;    /*el ancho se atoajusta al contenido*/    
+    width: 33.333%;    
+}
+
+.slider-element img{
+    max-height: 100%;
+    width: 100%;
+}
+
+#slider-arrows{
+    width: 95%;
+    margin-top: -30%;
+    margin-left: 2%;
+}
+
+#elementRed:checked ~ #slider-arrows label:nth-child(2),
+#elementGreen:checked ~ #slider-arrows label:nth-child(3),
+#elementOrange:checked ~ #slider-arrows label:nth-child(1){
+    display: block;
+    float: right;
+}
+
+#elementRed:checked ~ #slider-arrows label:nth-child(3),
+#elementGreen:checked ~ #slider-arrows label:nth-child(1),
+#elementOrange:checked ~ #slider-arrows label:nth-child(2){
+    display: block;
+    float: left;
+}
+
+#slider-arrows label{
+    cursor: pointer;
+    font-size: 2vw;
+}
+
+#elementRed:checked ~ #slider-arrows label:nth-child(3):before,
+#elementGreen:checked ~ #slider-arrows label:nth-child(1):before,
+#elementOrange:checked ~ #slider-arrows label:nth-child(2):before{
+    color: black;
+    content: "\f053";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:antialiased;
+}
+
+#elementRed:checked ~ #slider-arrows label:nth-child(2):after,
+#elementGreen:checked ~ #slider-arrows label:nth-child(3):after,
+#elementOrange:checked ~ #slider-arrows label:nth-child(1):after{
+    color: black;
+    content: "\f054";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:antialiased;
+}
+
 
 @media (min-width: 400px){
+    .icon{
+        display: inline-block;
+    }
+    
     .square{    
         box-sizing: content-box;
-        padding: 3%;
         width: 17%;
         display: inline-block;
     }
@@ -32,31 +150,30 @@
         color: white;
     }
     .circle:hover{
-        background: red;
-        /*width: 20%;
+        width: 30%;
         border-radius: 4%;
         position: absolute;
         padding: 3%;
-        margin-top: -6.5%;
-        margin-left: -2%;*/
+        margin-top: -10%;
+        margin-left: -6.5%;
     }
 
     .circle:hover>.show-hover-and-movile{
         display: block;
-        /*background-color: red;
-        margin-left: -0.2rem;
-        font-size: 1.2vw;
-        font-weight: bold;
-        margin-left: -0.2rem;
-        text-align: justify;*/
     }
 
-    /*.circle:hover > .icon{
+    .circle:hover > .icon{
         display: none;
-    }*/
+    }
+    
+    /*Slider*/
+    #slider-arrows{
+        padding-bottom: 30%;
+    }
 }
 
 @media (min-width: 900px){
+    /*Circles*/
     .rectangle{
         padding-top: 5%;
         float: left;
@@ -64,41 +181,139 @@
     }
     .square{
         width: 35%;
-    }/*
+    }
     .circle:hover{
-        padding: 0.5%;
+        background-color: rgba(0, 0, 0, 0.95);
     }
     .circle:hover[id="priceText"]{
-        margin-left: -6.5rem;
-        margin-top: -3rem;
+        margin-left: -1.5vw;
+        margin-top: -2vw;
     }
     .circle:hover[id="wifiText"]{
-        margin-left: -0.5rem;
-        margin-top: -3.5rem;
+        margin-left: -16vw;
+        margin-top: -4.5vw;
     }
     .circle:hover[id="audioGuideText"]{
-        margin-left: -6.5rem;
-        margin-top: -5.5rem;
+        margin-left: -1.5vw;
+        margin-top: -18.75vw;
     }
     .circle:hover[id="appText"]{
-        margin-left: -0.5rem;
-        margin-top: -5.5rem;
-    }*/
+        margin-left: -16vw;
+        margin-top: -18vw;
+    }
+    
+    /*Slider*/
+    #slider-container{
+        width: 55%;
+    }
+    #slider-arrows{
+        width: 91%;
+        padding: 0;
+        margin-top: -20%;
+        margin-left: 2%;
+    }
 }
 /*---------------------------------------------------------*/
 #historia3{
     background-image: url(../recursos/fondoh3.jpg);
     background-repeat: no-repeat;
     background-size:cover; 
-
 }
 
+.responsive-columns h4{
+    color: rgb(75, 180, 149);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(255, 0, 0, 0.3);  
+}
+.responsive-columns{
+    padding: 20px;
+    padding: 2vw;
+}
+@media (min-width: 400px){
+    .responsive-columns{
+        -webkit-column-count:2; /*Chrome, Safari, Opera*/
+        -moz-column-count:2; /*Firefox*/
+        column-count: 2;
+
+        -webkit-column-gap:40px; /*Chrome, Safari, Opera*/
+        -moz-column-gap:40px; /*Firefox*/
+        column-gap: 40px;
+
+        -webkit-column-gap:3rem; /*Chrome, Safari, Opera*/
+        -moz-column-gap:3rem; /*Firefox*/
+        column-gap: 3rem;
+
+        -webkit-column-rule:5px solid rgb(75, 180, 149); /*Chrome, Safari, Opera*/
+        -moz-column-rule:5px solid rgb(75, 180, 149); /*Firefox*/
+        column-rule: 5px solid rgb(75, 180, 149);
+
+        -webkit-column-rule:0.5rem solid rgb(75, 180, 149); /*Chrome, Safari, Opera*/
+        -moz-column-rule:0.5rem solid rgb(75, 180, 149); /*Firefox*/
+        column-rule: 0.5rem solid rgb(75, 180, 149);
+    }
+}
+
+@media (min-width: 900px){
+    .responsive-columns{
+        -webkit-column-count:3; /*Chrome, Safari, Opera*/
+        -moz-column-count:3; /*Firefox*/
+        column-count: 3;
+    }
+}
+/*---------------------------------------------------------*/
 #historia4{
     background-image: url(../recursos/fondoh4.jpg);
     background-repeat: no-repeat;
     background-size:cover; 
-
 }
+.lalafour-columns{
+    padding: 20px;
+    padding: 2vw;
+    
+    -webkit-column-count:4; /*Chrome, Safari, Opera*/
+    -moz-column-count:4; /*Firefox*/
+    column-count: 4;
+
+    -webkit-column-gap:40px; /*Chrome, Safari, Opera*/
+    -moz-column-gap:40px; /*Firefox*/
+    column-gap: 40px;
+
+    -webkit-column-gap:3rem; /*Chrome, Safari, Opera*/
+    -moz-column-gap:3rem; /*Firefox*/
+    column-gap: 3rem;
+
+    -webkit-column-rule:5px solid rgb(75, 180, 149); /*Chrome, Safari, Opera*/
+    -moz-column-rule:5px solid rgb(75, 180, 149); /*Firefox*/
+    column-rule: 5px solid rgb(75, 180, 149);
+
+    -webkit-column-rule:0.5rem solid rgb(75, 180, 149); /*Chrome, Safari, Opera*/
+    -moz-column-rule:0.5rem solid rgb(75, 180, 149); /*Firefox*/
+    column-rule: 0.5rem solid rgb(75, 180, 149);
+}
+
+#transporte4col1{
+    background-color: red;
+    float: left;
+}
+
+#transporte4col2{
+    background-color: blue;
+    float: left;
+}
+
+#transporte4col3{
+    background-color: yellow;
+    float: left;
+}
+#transporte4col4{
+    background-color: linen;
+    float: left;
+}
+fur-columns{
+    position: relative;
+    display: inline-block;
+}
+/*---------------------------------------------------------*/
 #historia5{
     background-image: url(../recursos/fondoh5.jpg);
     background-repeat: no-repeat;

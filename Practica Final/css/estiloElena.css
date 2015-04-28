@@ -4,12 +4,6 @@
     box-sizing: border-box; /* el navegador interpreta el width/hight % incluyendo padding */
 }
 
-article p{
-    font-size: 1.5vw; /*explorer*/
-    padding-bottom: 20px;
-    padding-bottom: 2rem;
-    text-align: justify;
-}
 
 body{
     text-align: center;
@@ -207,30 +201,6 @@ h4.white{
     padding: 5%;
 }
 
-/*BEGIN Slider*/
-
-input[name="slider-select-element"]{
-    display: none;
-}
-
-/* como hay overflow en el slider-container se colocan
-los elementos uno detrás de otro hacia la derecha.
-con checked decimos que cuando está seleccionado
-según qué input se desplace el margen x% para mostrar
-un elemento u otro */
-#elementRed:checked ~ #slider-container #slider-box {
-    margin-left: 0;
-}
-
-#elementGreen:checked ~ #slider-container #slider-box {
-    margin-left: -100%;
-}
-
-#elementOrange:checked ~ #slider-container #slider-box {
-    margin-left: -200%;
-}
-/*-------------------------------*/
-
 #CB{
     background-image: url(../recursos/Rondvaartboot-Canal-Cruise-Amsterdam-kopie.jpg); 
     background-position: bottom;
@@ -242,83 +212,6 @@ h3.titleSection{
     font-size: 5vw;
 }
 
-#slider-container{
-    width: 100%;
-    overflow: hidden;
-    margin-left: 2%
-}
-
-#slider-box{
-    width: 300%;
-    -webkit-transition: all 0.75s ease;
-    -moz-transition: all 0.75s ease;
-    -ms-transition: all 0.75s ease;
-    -o-transition: all 0.75s ease;
-    transition: all 0.75s ease;
-}
-
-.slider-element{
-    float: left;    /*el ancho se atoajusta al contenido*/    
-    width: 33.333%;    
-}
-
-.slider-element img{
-    max-height: 100%;
-    width: 100%;
-}
-
-#slider-arrows{
-    width: 95%;
-    margin-top: -30%;
-    margin-left: 4%;
-}
-
-#elementRed:checked ~ #slider-arrows label:nth-child(2),
-#elementGreen:checked ~ #slider-arrows label:nth-child(3),
-#elementOrange:checked ~ #slider-arrows label:nth-child(1){
-    display: block;
-    float: right;
-}
-
-#elementRed:checked ~ #slider-arrows label:nth-child(3),
-#elementGreen:checked ~ #slider-arrows label:nth-child(1),
-#elementOrange:checked ~ #slider-arrows label:nth-child(2){
-    display: block;
-    float: left;
-}
-
-#slider-arrows label{
-    cursor: pointer;
-    font-size: 2vw;
-}
-
-#elementRed:checked ~ #slider-arrows label:nth-child(3):before,
-#elementGreen:checked ~ #slider-arrows label:nth-child(1):before,
-#elementOrange:checked ~ #slider-arrows label:nth-child(2):before{
-    color: black;
-    content: "\f053";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing:antialiased;
-}
-
-#elementRed:checked ~ #slider-arrows label:nth-child(2):after,
-#elementGreen:checked ~ #slider-arrows label:nth-child(3):after,
-#elementOrange:checked ~ #slider-arrows label:nth-child(1):after{
-    color: black;
-    content: "\f054";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing:antialiased;
-}
-/*END Slider*/
-
 /*BEGIN Circles*/
 
 
@@ -326,11 +219,6 @@ h3.titleSection{
 
 
 
-.empty-circle {
-    padding: 50%;
-    border-radius: 50%;
-    color: white;
-}
 
 .icon{
     display: inline-block;
@@ -366,11 +254,7 @@ div p{
 /*END Canal Bus*/
 
 /*BEGIN Tram*/
-.responsive-columns h4{
-    color: rgb(75, 180, 149);
-    font-weight: bold;
-    text-shadow: 1px 1px 1px rgba(255, 0, 0, 0.3);  
-}
+
 
 #tramArticle{
     width: 100%;
@@ -388,11 +272,6 @@ div p{
 
 #backgroundT{
     padding-top: 18%;
-}
-
-.responsive-columns{
-    padding: 20px;
-    padding: 2rem;
 }
 
 /*END Tram*/
@@ -507,35 +386,12 @@ div p{
         display: block;
     }
     /*tram*/
-    .responsive-columns{
-        -webkit-column-count:2; /*Chrome, Safari, Opera*/
-        -moz-column-count:2; /*Firefox*/
-        column-count: 2;
-
-        -webkit-column-gap:40px; /*Chrome, Safari, Opera*/
-        -moz-column-gap:40px; /*Firefox*/
-        column-gap: 40px;
-
-        -webkit-column-gap:3rem; /*Chrome, Safari, Opera*/
-        -moz-column-gap:3rem; /*Firefox*/
-        column-gap: 3rem;
-
-        -webkit-column-rule:5px solid rgb(75, 180, 149); /*Chrome, Safari, Opera*/
-        -moz-column-rule:5px solid rgb(75, 180, 149); /*Firefox*/
-        column-rule: 5px solid rgb(75, 180, 149);
-
-        -webkit-column-rule:0.5rem solid rgb(75, 180, 149); /*Chrome, Safari, Opera*/
-        -moz-column-rule:0.5rem solid rgb(75, 180, 149); /*Firefox*/
-        column-rule: 0.5rem solid rgb(75, 180, 149);
-    }
+    
     /*canal bus*/
 
 
     .hover{
         display: none;
-    }
-    #slider-arrows{
-        padding-bottom: 30%;
     }
 }
 
@@ -546,22 +402,9 @@ div p{
     }
     
     /**/
-    .responsive-columns{
-        -webkit-column-count:3; /*Chrome, Safari, Opera*/
-        -moz-column-count:3; /*Firefox*/
-        column-count: 3;
-    }
+
     
     /*canal bus*/
-    #slider-container{
-        width: 55%;
-    }
-    #slider-arrows{
-        width: 91%;
-        padding: 0;
-        margin-top: -20%;
-        margin-left: 2%;
-    }
     
     
     .big-rectangle{
@@ -580,9 +423,114 @@ div p{
 
 /*--------------------------------------------------*/
 
-@media (max-width: 1000px) {
-    .cabeceraSeccion{
-        position: relative;
+article p{
+    font-size: 2vw; /*explorer*/
+    padding-bottom: 20px;
+    padding-bottom: 2vw;
+    text-align: justify;
+}
+.cabeceraSeccion{
+    position: relative;
+}
+    
+@media (min-width: 400px){
+
+}
+
+@media (min-width: 900px){
+    article p{
+        font-size: 1vw;
     }
 }
+/*--------------------------------------------------*/
+/*Circles*/
+.rectangle{
+    width: 100%;
+    padding-bottom: 9%;
+    margin-right: 3%;
+    float: none;
+}
+.square{
+    padding: 3%;
+}
+
+.circle{
+    border-radius: 10%;
+}
+
+.icon{
+    display: none;
+}
+
+.big-font-size p{
+    font-size: 2vw;
+}
+
+@media (min-width: 400px){
+    .icon{
+        display: inline-block;
+    }
+    
+    .square{    
+        box-sizing: content-box;
+        width: 17%;
+        display: inline-block;
+    }
+
+    .show-hover-and-movile{
+        display: none;
+    }
+    .circle {
+        padding: 27%;
+        border-radius: 50%;
+        color: white;
+    }
+    .circle:hover{
+        width: 30%;
+        border-radius: 4%;
+        position: absolute;
+        padding: 3%;
+        margin-top: -10%;
+        margin-left: -6.5%;
+    }
+
+    .circle:hover>.show-hover-and-movile{
+        display: block;
+    }
+
+    .circle:hover > .icon{
+        display: none;
+    }
+}
+
+@media (min-width: 900px){
+    .rectangle{
+        padding-top: 5%;
+        float: left;
+        width: 35%;
+    }
+    .square{
+        width: 35%;
+    }
+    .circle:hover{
+        background-color: rgba(0, 0, 0, 0.95);
+    }
+    .circle:hover[id="priceText"]{
+        margin-left: -1.5vw;
+        margin-top: -2vw;
+    }
+    .circle:hover[id="wifiText"]{
+        margin-left: -16vw;
+        margin-top: -4.5vw;
+    }
+    .circle:hover[id="audioGuideText"]{
+        margin-left: -1.5vw;
+        margin-top: -18.75vw;
+    }
+    .circle:hover[id="appText"]{
+        margin-left: -16vw;
+        margin-top: -18vw;
+    }
+}
+/*end: Circles*/
 /*--------------------------------------------------*/
