@@ -53,6 +53,7 @@ article h4{
 .empty-circle {
     padding: 50%;
     border-radius: 50%;
+    box-shadow: 1px 1px 20px black;
 }
 .rectangleR{
     padding: 3%;
@@ -273,3 +274,75 @@ article h4{
         padding: 1%;
     }
 }
+
+/*RETOQUE*/
+
+#comida1 .tituloCabecera{
+    color:white;
+}
+#comida2 .tituloCabecera{
+    color:white;
+}
+#comida3 .tituloCabecera{
+    color:white;
+}
+
+body{
+    width: 100%;
+}
+.wrapper{
+    width:100%;
+}
+
+#comida1{
+    height: 100%;
+    min-height: 800px;
+}
+
+@media (max-width: 1220px){
+    #comida1{
+        height: 600px;
+        min-height: 500px;
+    }
+}
+
+@media (max-width: 900px){
+    #comida1{
+        height: 900px;
+        
+    }
+    
+    #comida2{
+        height: 600px;
+        
+    }
+}
+
+@media (max-width: 500px){
+    #comida1{
+        height: 400px;
+        
+    }
+    
+    #comida2{
+        height: 300px;
+        
+    }
+}
+
+@media (max-width: 400px){
+    #comida1{
+        height: 600px;
+        
+    }
+    
+    #comida2{
+        height: 600px;
+        
+    }
+    #comida3{
+        height: 700px;
+        
+    }
+}
+
