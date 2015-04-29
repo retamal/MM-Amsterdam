@@ -13,104 +13,242 @@ http://examinator.ws/
 -->
     <META CHARSET="UTF-8">
     <!--<BASE HREF="http://www.mmamsterdam.hol.es/">-->
-    <TITLE>Proyecto Multimedia Amsterdam</TITLE>
-    <meta name="keywords" content="mmamsterdam, guia, turistica, amsterdam, vacaciones, lugares, visitar, bonito, holanda, paises, bajos, paises bajos, lugares, descubrir, hachis, coffee, shop, barrio, rojo, canales, ocio, gastronomia, medios, transporte, monumentos, museos, bicileta, bici, proyecto, universidad, multimedia, mm"/>
-    <meta name="description" content="Conocer los principales atractivos de la ciudad de Amsterdam"/>
+    <TITLE>MMAmsterdam: Qué comer</TITLE>
+    
+    <meta name="keywords" content="mmamsterdam, guia, turistica, amsterdam, vacaciones, lugares, visitar, bonito, holanda, paises, bajos, paises bajos, lugares, descubrir, hachis, coffee, shop, barrio, rojo, canales, ocio, gastronomia, medios, transporte, monumentos, museos, bicileta, bici, proyecto, universidad, multimedia,cultura, viaje, cerveza, mm, marihuana, droga, legal"/>
+    <meta name="description" content="Comida típica que no te puedes perder en Ámsterdam"/>
     <meta name="copyright" content="David Retamal Rojas y Elena Salcedo Ortega"/>
     <meta name="language" content="es"/>
     <meta name="revisit-after" content="1 month"/>
     <meta name="robots" content="index, follow"/>
+        
+    <link href="http://mmamsterdam.hol.es" hreflang="es" rel="alternate" title="MMAmsterdam" type="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
  
-    <META NAME="MMAmsterdam" CONTENT="Proyecto para Multimedia sobre la ciudad de Amsterdam"/>  
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"/>
-    <link type="text/css" rel="stylesheet" href="css/estiloElena.css" />
+    <link href='recursos/favicon.png' rel='shortcut icon' type='image/png'>
+        
+    <META NAME="MMAmsterdam" CONTENT="Proyecto para Multimedia sobre la ciudad de Amsterdam"/>
+    
+<!--    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
     <link type="text/css" rel="stylesheet" href="css/estiloDavid.css" />
-   
-    <link href='http://fonts.googleapis.com/css?family=Ruluko|Duru+Sans' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/estiloElena.css" />
+    <link type="text/css" rel="stylesheet" href="css/comida.css" />
+<!--    <link href="http://fonts.googleapis.com/css?family=Ruluko|Duru+Sans" rel='stylesheet' type='text/css' />-->
+    <link href="http://fonts.googleapis.com/css?family=Ruluko" rel='stylesheet' type='text/css' />
+    <link href="http://fonts.googleapis.com/css?family=Duru+Sans" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
 type="text/javascript" charset="utf-8"></script>
     
     
     <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/audio.js" type="text/javascript"></script>
 
 </head>
-
 <body>
+    <div class="wrapper">
         <div id="top"></div>
         <div id="contenedorMenu">
             <ul>
-                <li class="elementoMenu"><a class="enlace" href="#kroket">Croquetas</a></li>
-                <li class="elementoMenu"><a class="enlace" href="#backgroundApplePie">Postre</a></li>
-                
-                <li class="elementoMenu"><a class="enlace" href="#febo">FEBO</a></li>
+                <li class="elementoMenu"><a class="enlace" href="#comida3">Quesos</a></li> 
+                <li class="elementoMenu"><a class="enlace" href="#comida2">Dulces</a></li>
+                <li class="elementoMenu"><a class="enlace" href="#comida1">FEBO</a></li>
                 <li class="elementoMenu" style="background-color:rgb(255, 157, 0);"><a class="enlace" href="#top" >Qué comer</a></li>
                 <li class="elementoMenu" style="background-color:rgba(44, 155, 204, 0.85);"><a class="enlace" href="index.html">Home</a></li>
             </ul>
         </div>
-    <section class="contenedorImage" id="backgroundIndexC">
-        <div id="QC">
-            <h1 class="mayusFont title">¿Qué_comer?</h1>
-            <h3 class="mayusFont description">Comida típica amsterdamesa</h3>
-        </div>
-    </section>
-    
-    <section class="contenedorImage" id="febo">
-        <h3 class="titleSection mayusFont colorOrange">FEBO</h3>
-        <div class="wrapperPadding5">
-            <h4 class="mayusFont description">Comida rápida:</h4>
-            <div class="rectangle">
-                <div class="square">
-                    <div title="kaassouffle" class="empty-circle" id="kaassouffleBackground">
+        
+        <section class="viewPrin" id="fondoComida" >           
+            <div class="contenedorIndex">                
+                <div id="textoAmsterdam">
+                    <h3>¿QUÉ COMER?</h3>
+                </div>
+                <div id="descripcionAmsterdam">Comida típica amsterdamesa</div>
+            </div>
+        </section>   
+        <section class="view" id="comida1" >
+            <div class="contenedorIndex">
+                <div class="barraSeparadora"></div>
+                <div class="seccionIndex">
+                    <div class="cabeceraSeccion">
+                        <div class="tituloCabecera">
+                            <h3 style="display:inline-block;">FEBO</h3>           
+                        </div>
                     </div>
-                </div>
-                <div class="square">
-                    <div title="kalfskroket" id="kalfskroketBackground" class="empty-circle">                           
+                    <div class="restoSeccion">
+                        <div class="wrapper80">
+                        <div class="rectangle" id="kaassouffle">
+                                <div class="square">
+                                    <div id="kaassouffleBackground" title="kaassouffle" class="empty-circle" ></div>               
+                                </div>
+                                <article class="big-font-size blackBackground show-hover-and-movile rectangleR">
+                                    <h4>kaassouffle</h4>
+                                    <p>El nombre completo del FEBO incluye el lema "de Lekkerste", o "el más sabroso". Esto es lo que estaban hablando: Gouda curado, empanado y frito, que rezuma de su cáscara crujiente con cada bocado.</p>
+                                </article>
+</div>
+                        <div class="rectangle" id="kalfskroket">
+                            <div class="square">
+                                <div title="kalfskroket" id="kalfskroketBackground" class="empty-circle"></div>
+                            </div>
+                            <article class="big-font-size blackBackground show-hover-and-movile rectangleR">
+                                <h4>kalfskroket</h4>
+                                <p>Aquí es donde el lechón toma protagonismo. Los trozos más jugosos de la carne y la mezcla cremosa de polvo de patata y mantequilla se fusionan creando un sabor totalmente equilibrado.</p>
+                            </article>
+</div>
+                        <div class="rectangle" id="kipburger">
+                            <div class="square">
+                                <div title="kipburger" id="kipburgerBackground" class="empty-circle"></div>
+                            </div>
+                            <article class="big-font-size blackBackground show-hover-and-movile rectangleR" id="kipburger">
+                                <h4>kipburger</h4>
+                                <p>De tamaño perfectamente asequible, con un filete de pollo crujiente y sabroso. Para esta hamburguesa utilizan salsa a base de mayonesa picante con un toque de mostaza. ¡No te lo puedes perder!</p>
+                            </article>
+</div>
+                        <div class="rectangle" id="bami">
+                        <div class="square">
+                            <div title="bami" id="bamiBackground" class="empty-circle"></div>
+                        </div>
+                        <article class="big-font-size blackBackground show-hover-and-movile rectangleR">
+                            <h4>bami</h4>
+                            <p>Esta merienda Indonesia de nombre indonesio es un cuadrado frito de fideos y verduras con especias. ¡Viva la multiculturalidad! Aún que en la versión de FEBO prima el sabor a cebolla.</p>
+                        </article>
+</div>
+                        </div>
                     </div>
-                </div>
-                <div class="square">
-                    <div title="kipburger" id="kipburgerBackground" class="empty-circle">
+                </div>                
+            </div>       
+        </section>        
+        <section class="view" id="comida2" >
+            <div class="contenedorIndex">
+                <div class="barraSeparadora"></div>
+                <div class="seccionIndex">
+                    <div class="cabeceraSeccion">
+                        <div class="tituloCabecera">
+                            <h3 style="display:inline-block;">Dulces</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="square">
-                    <div title="bami" id="bamiBackground" class="empty-circle">
+                    <div class="restoSeccion">
+                        <div class="wrapper90">
+                            <div class="rectanglec2" id="poffertjes">
+                                <div class="square">
+                                    <div id="poffertjesBackground" title="poffertjes" class="empty-circle" ></div>               
+                                </div>
+                                <article class="big-font-size blackBackground show-hover-and-movilec2 rectangleR">
+                                    <h4>poffertjes </h4>
+                                    <p>Pdrás disfrutar de tortitas o poffertjes (tortitas infladas) en tiendas especializadas como el Pancake Bakery, situada en el canal Prinsengracht.</p>
+                                </article>
+                            </div>
+                            <div class="rectanglec2" id="appleTart">
+                                <div class="square">
+                                    <div title="apple_tart" id="appleTartBackground" class="empty-circle"></div>
+                                </div>
+                                <article class="big-font-size blackBackground show-hover-and-movilec2 rectangleR">
+                                    <h4>Apple tart</h4>
+                                    <p>En uno de los cafés más antiguos de Ámsterdam, la cafetería 'Papeneiland', realizan una de las mejores tartas de manzana caseras.</p>
+                                </article>
+                            </div>
+                            <div class="rectanglec2" id="hagelslag">
+                                <div class="square">
+                                    <div title="hagelslag" id="hagelslagBackground" class="empty-circle"></div>
+                                </div>
+                                <article class="big-font-size blackBackground show-hover-and-movilec2 rectangleR">
+                                    <h4>hagelslag</h4>
+                                    <p>¡Para desayunar, de aperitivo, como merienda o postre! A los holandeses les pirra comer pan, con mantequilla y birutas de chocolate.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>                
+                </div>                
+            </div>           
+        </section>        
+        <section class="view" id="comida3" >
+            <div class="contenedorIndex">
+                <div class="barraSeparadora"></div>
+                <div class="seccionIndex">
+                    <div class="cabeceraSeccion">
+                        <div class="tituloCabecera">
+                            <h3 style="display:inline-block;">Quesos</h3>
+                        </div>
                     </div>
-                </div>
+                    <div class="restoSeccion">
+                        <div class="wrapper90">
+                            <div class="rectanglec3" id="maasdammer">
+                                <div class="square">
+                                    <div id="maasdammerBackground" title="Queso Maasdammer" class="empty-circle" ></div>               
+                                </div>
+                                <article class="big-font-size blackBackground show-hover-and-movilec3 rectangleR">
+                                    <h4>Maasdammer</h4>
+                                    <p>Con un delicado sabor a nuez, grandes agujeros y forma convexa.</p>
+                                </article>
+                            </div>
+                            <div class="rectanglec3" id="boerenkaas">
+                                <div class="square">
+                                    <div title="Queso artesano tradicional" id="boerenkaasBackground" class="empty-circle"></div>
+                                </div>
+                                <article class="big-font-size blackBackground show-hover-and-movilec3 rectangleR">
+                                    <h4>Boerenkaas</h4>
+                                    <p>Elaborado con leche cruda, su fabricación es obligatoriamente artesanal.</p>
+                                </article>
+                            </div>
+                            <div class="rectanglec3" id="quesocabra">
+                                <div class="square">
+                                    <div title="Queso de cabra" id="quesocabraBackground" class="empty-circle"></div>
+                                </div>
+                                <article class="big-font-size blackBackground show-hover-and-movilec3 rectangleR">
+                                    <h4>Queso de cabra</h4>
+                                    <p>Existe fresco y de pasta blanda, o semiduro y curado. Es de un color pálido, algo ácido y de textura fundente.</p>
+                                </article>
+                            </div>
+                            <div class="rectanglec3" id="quesoahumado">
+                                <div class="square">
+                                    <div title="Queso ahumado" id="quesoahumadoBackground" class="empty-circle"></div>
+                                </div>
+                                <article class="big-font-size blackBackground show-hover-and-movilec3 rectangleR">
+                                    <h4>Queso ahumado</h4>
+                                    <p>Este tipo de queso se elabora, se funde, y luego se ahúma y se moldea en forma cilíndrica. Suele venderse en lonchas.</p>
+                                </article>
+                            </div>
+                            <div class="rectanglec3" id="quesofrisonalclavo">
+                                <div class="square">
+                                    <div title="Queso frisón al clavo" id="quesofrisonalclavoBackground" class="empty-circle"></div>
+                                </div>
+                                <article class="big-font-size blackBackground show-hover-and-movilec3 rectangleR">
+                                    <h4>Queso frisón al clavo</h4>
+                                    <p>De grano duro, seco y de sabor ácido, está elaborado con leche desnatada, cominos y clavo.</p>
+                                </article>
+                            </div>
+                        </div>                  
+                    </div>                
+                </div>                
+            </div>           
+        </section>        
+        
+        <div id="footer"><a href="#top">MMAmsterdam © David Retamal Rojas y Elena Salcedo Ortega.</a>  
+                <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fmmamsterdam.hol.es%2F">
+                    <img style="border:0;width:88px;height:31px"
+            src="recursos/certificado.png"
+            alt="¡HTML5 Válido!" />
+                </a>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="¡CSS Válido!" />
+                </a>
+                <a href="http://www.tawdis.net/system/modules/org.fundacionctic.taw4_wcag_informes_ocms/elements/wcag20/resumen.jsp?url=http%3A%2F%2Fmmamsterdam.hol.es&amp;crc=1&amp;nivel=aaa"
+	title="Explicación del Nivel Triple-A de 
+	Conformidad">
+            <img height="32" width="88" 
+                src="http://www.w3.org/WAI/wcag1AAA-blue"
+                alt="Icono de conformidad con el Nivel Triple-A, 
+                de las Directrices de Accesibilidad para el 
+                Contenido Web 1.0 del W3C-WAI">
+                </a>
             </div>
-            <div class="show-tablet rectangle big-rectangle">
-                <div title="Dispensador de FEBO" id="FEBObox">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contenedorImage" id="backgroundApplePie">
-        <h3 class="titleSection mayusFont colorWhite">Café ‘Papeneiland’</h3>
-            <div class="wrapperPadding5 rectangle">
-                <div title="Tarta de manzana casera" id="apple-box"></div>
-            </div>
-            <div class="rectangle big-rectangle right">
-                <div class="blackBackground">
-                    <h4 class="mayusFont">La mejor tarta de manzana casera de Ámsterdam</h4>
-                    <article class="responsive-columns">
-                        <p>On the corner of the Brewer’s Canal, is one of the oldest café’s in Amsterdam: café ‘Papeneiland’, established in 1641. In the 17th century, “Paap” was a common swearword for Catholics. ‘Papeneiland’ was a catholic café and it stood on a little island just outside the city.</p>
-                        <p>A secret tunnel was dug in the 17th century from the Posthorn church, under the canal, to the basement of the café. Through that tunnel, the Catholics could flee the city if there was trouble. If you ask the barman of that café nicely, he’ll take you to the basement and show you the entrance of that tunnel, which is still there. If you look back at the café from the other side of the bridge, you see that the building has two front gables, one stepgable on each canal. As opposed to the house on the other corner, which has one front and one side gable. That meant that the owner of the café had to pay double taxes, because they only had to pay for front footage with a hoisting hook. Recently, Papeneiland made a claim to fame because American  ex-president Clinton spent some hours in the cafe during his visit to Holland in May 2011. He enjoyed some of the famous home-made apple pie there.</p>
-                    </article>
-                </div>
-            </div>
-    </section>
-    <section class="contenedorImage" id="kroket">
-        <h3 class="titleSection mayusFont colorWhite">Eetsalon Van Dobben</h3>
-            
-            <div class="wrapperPadding5 rectangle big-rectangle left">
-                <div class="blackBackground">
-                    <h4 class="mayusFont">La mejor tarta de manzana casera de Ámsterdam</h4>
-                    <article class="responsive-columns">
-                        <p>The Netherlands is among that select group of nations with a thing for the breaded, deep-fried, creamy balls we call croquettes (thanks to the French). Of course, not all croquettes are created equal. The Dutch kroket is typically cylindrical in shape, filled with a meat ragout (most commonly using beef, beef broth, flour, butter or margarine, onions, herbs) and epitomizing textural contrast: very crispy and crunchy on the outside, super soft and smooth inside, with chunks or strands of meat. In Amsterdam, kroketten have long been an economical way of using leftover meat stews and roasts—mixed with gravy, rolled into logs, breaded, and fried—but the snack really took off during WWII, when they became mass-produced as a cheap foodstuff. Since then the kroket has been regarded mostly as a fast-food delicacy, a common item at the vending-machine-style automats around town, where a popular game is wondering what the heck they’re really made of. We say: Don’t overthink it. It’s delicious served the Dutch way, with mustard and (optional) white bread.</p>
-                    </article>
-                </div>
-            </div>
-        <div class="rectangle">
-                <div title="croquetas ricas" id="kroket-box"></div>
-            </div>
-    </section>
+        
+        
+       
+    </div>
 </body>
+
+</html>
